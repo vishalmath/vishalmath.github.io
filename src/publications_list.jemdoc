@@ -43,7 +43,7 @@ Symposium on Theory Of Computing <b>(STOC)</b>, 2018
 </li>
 
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Dimension Reduction for Polynomials over Gaussian Space and Applications</b></a> [<a href="GKR_DimRedPolys.pdf">shorter</a>][<a href="https://eccc.weizmann.ac.il/report/2017/125/download">longer</a>]<br/>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Dimension Reduction for Polynomials over Gaussian Space and Applications</b></a> [<a href="files/GKR_DimRedPolys.pdf">shorter</a>][<a href="https://eccc.weizmann.ac.il/report/2017/125/download">longer</a>]<br/>
 <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Pritish Kamath, <a href="http://www.eecs.berkeley.edu/~prasad/">Prasad Raghavendra</a><br/>
 Computational Complexity Conference <b>(CCC)</b>, 2018
 <div class="abs">
@@ -74,7 +74,7 @@ Our proof of optimality for support recovery is obtained by showing an equivalen
 </li>
 
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Compression in a Distributed Setting</b></a> [<a href="GHKS_distributed_compression.pdf">pdf</a>]<br/>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Compression in a Distributed Setting</b></a> [<a href="files/GHKS_distributed_compression.pdf">pdf</a>]<br/>
 <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Elad Haramaty, Pritish Kamath, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
 Innovations in Theoretical Computer Science <b>(ITCS)</b>, 2017
 <div class="abs">
@@ -155,7 +155,7 @@ In this work, we show that for any $\delta \in (0,1]$ and $\gamma \in [0, 1/3)$,
 {}{raw}
 <ul>
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Arithmetic Circuits : A chasm at depth three</b></a> [<a href="http://eccc.weizmann.ac.il/report/2013/026/revision/1/download">pdf</a>] [<a href="kamath_chasm_at_3.pdf">FOCS slides</a>] [<a href="http://techtalks.tv/talks/arithmetic-circuits-a-chasm-at-depth-three/59344/">FOCS video</a>] [<a href="http://www.youtube.com/watch?v=WsO2V4t0HtY">TCS+ video</a>]<br/>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Arithmetic Circuits : A chasm at depth three</b></a> [<a href="http://eccc.weizmann.ac.il/report/2013/026/revision/1/download">pdf</a>] [<a href="files/kamath_chasm_at_3.pdf">FOCS slides</a>] [<a href="http://techtalks.tv/talks/arithmetic-circuits-a-chasm-at-depth-three/59344/">FOCS video</a>] [<a href="http://www.youtube.com/watch?v=WsO2V4t0HtY">TCS+ video</a>]<br/>
 <a href="https://sites.google.com/site/ankitgupta1988site/home/">Ankit Gupta</a>, Pritish Kamath, <a href="http://research.microsoft.com/en-us/people/neeraka/">Neeraj Kayal</a>, <a href="http://www.cmi.ac.in/~ramprasad/">Ramprasad Saptharishi</a><br/>
 Foundations of Computer Science <b>(FOCS)</b>, 2013 (also in <b>SICOMP</b> and <b>CACM</b>)
 <div class="abs">

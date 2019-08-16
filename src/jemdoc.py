@@ -30,6 +30,8 @@ import StringIO
 from subprocess import *
 import tempfile
 
+SOURCE_PATH = 'src/'
+
 def info():
     print __doc__
     print 'Platform: ' + sys.platform + '.'
@@ -138,7 +140,7 @@ def standardconf():
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     
     [defaultcss]
-    <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+    <link rel="stylesheet" href="%sjemdoc.css" type="text/css" />
     
     [windowtitle]
     # used in header for window title.
@@ -242,7 +244,7 @@ def standardconf():
     [sourcelink]
     (<a href="|">source</a>)
 
-    """
+    """ % (SOURCE_PATH)
     b = ''
     for l in a.splitlines(True):
         if l.startswith('    '):
@@ -527,10 +529,10 @@ def replaceequations(b, f):
 
             if wl:
                 b = b[:m.start()] + \
-                        '{{\n<img class="eqwl" src="%s" alt="%s" />\n<br />}}' % (fullfn, eqtext) + b[m.end():]
+                        '{{\n<img class="eqwl" src="%s%s" alt="%s" />\n<br />}}' % (SOURCE_PATH, fullfn, eqtext) + b[m.end():]
             else:
                 b = b[:m.start()] + \
-                    '{{<img class="eq" src="%s" alt="%s" style="vertical-align: -%dpx" />}}' % (fullfn, eqtext, offset) + b[m.end():]
+                    '{{<img class="eq" src="%s%s" alt="%s" style="vertical-align: -%dpx" />}}' % (SOURCE_PATH, fullfn, eqtext, offset) + b[m.end():]
 
             # jem: also clean out line breaks in the alttext?
             m = r.search(b, m.start())

@@ -1,0 +1,9 @@
+# jemdoc: menu{TOC_MENU}{toc_calendar.html}
+= Theory Calendar
+
+*Maintained by:* [index.html Pritish Kamath] ($\mathrm{pritish@mit.edu}$)\n
+
+Add this calendar to yours to receive details about upcoming events in the Theory group\n
+(includes [acseminar.html A&C Seminars], [http://toc.csail.mit.edu/node/424 TOC Colloquium], [http://toc.csail.mit.edu/node/428 CIS Seminars], [https://sites.google.com/site/theorylunch2016/home Theory Lunch], TOC tea and more!) :
+{{<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r9nl2sjnqb0nccl0mllim32p2s%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="700" height="350" frameborder="0" scrolling="no"></iframe>}}\n
+Click on the events above to get more description about the same (title/abstract for talks, etc.))

@@ -1,0 +1,432 @@
+# jemdoc: menu{TOC_MENU}{acseminar.html}
+= Algorithms & Complexity Seminar, MIT : 2016-17
+
+*Organizers:* [http://toc.csail.mit.edu/user/198 Akshay Degwekar] ($\mathrm{akshayd@mit.edu}$), [index.html Pritish Kamath] ($\mathrm{pritish@mit.edu}$)\n
+
+The Algorithms & Complexity Seminar for the 2016-2017 year will usually (unless otherwise stated) meet on *Wednesdays 4pm-5pm* in *32-G575* (Theory Lab on the 5th floor of the Stata Center). The style and format of these meetings are variable. Please feel free to contact the organizers to find out more details. To receive announcements of upcoming talks, subscribe to the mailing list by either visiting the +[https://lists.csail.mit.edu/mailman/listinfo/compalgsem mailman page]+ or send an empty email to +compalgsem-subscribe@lists.csail.mit.edu+.
+
+== Past Talks
+~~~
+{}{raw}
+<ul>
+<li>
+<b>Wednesday, May 25, 2016</b>: <b><a href="http://www.cs.berkeley.edu/~tschramm/">Tselil Schramm</a></b> (UC Berkeley).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Strongly refuting random CSPs below the spectral threshold</a>
+<div class="abs">
+<b>Abstract.</b> Random instances of $3$-SAT are known to be unsatisfiable with high probability when there at least $5N$ clauses. However, given a random $3$-SAT instance on $N$ variables, the task of refuting the instance, or of proving that the instance has no satisfying assignments, is hypothesized to be computationally hard if there are $O(N)$ clauses--in fact, the best known efficient algorithms for refutation require instances with at least $\Omega(N^{3/2})$ clauses, a factor of $N^{1/2}$ beyond the unsatisfiability threshold at $\Theta(N)$.<br/><br/>
+
+In this talk, I will describe a new spectral algorithm that refutes $3$-SAT instances with fewer clauses, given more time. Specifically, our algorithm refutes instances with $\Theta(N^{3/2 - \delta/2})$ clauses in $\mathrm{exp}(O(N^\delta))$ time, giving the same guarantees as the best known polynomial-time algorithms when $\delta = 0$, and from there smoothly approaching the unsatisfiability threshold at $\delta = 1$. Further, our algorithm strongly refutes the instances, certifying that no assignment satisfies more than a $(1-\varepsilon)$-fraction of constraints for a constant $\varepsilon$. <br/><br/>
+
+Our algorithm also implies tight upper bounds on the value of sum-of-squares relaxations for random CSPs, as well as the value of sum-of-squares relaxations for random polynomial maximization over the unit sphere (injective tensor norm).<br/><br/>
+
+Based on joint work with Prasad Raghavendra and Satish Rao.
+</div>
+</li>
+
+<li>
+<b>Wednesday, June 1, 2016</b>: <b><a href="http://www.mit.edu/~jerryzli/">Jerry Li</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Robust Estimators in High Dimensions without the Computational Intractability</a>
+<div class="abs">
+<b>Abstract.</b> We study high-dimensional distribution learning in an agnostic setting where an adversary is allowed to arbitrarily corrupt an $\varepsilon$-fraction of the samples. Such questions have a rich history spanning statistics, machine learning and theoretical computer science. Even in the most basic settings, the only known approaches are either computationally inefficient or lose dimension-dependent factors in their error guarantees. This raises the following question: is high-dimensional agnostic distribution learning even possible, algorithmically?<br/><br/>
+
+In this talk, we present the first computationally efficient algorithms with dimension-independent error guarantees for agnostically learning several fundamental classes of high-dimensional distributions: (1) a single Gaussian, (2) a product distribution on the hypercube, (3) mixtures of two product distributions (under a natural balancedness condition), and (4) mixtures of spherical Gaussians. Our algorithms achieve error that is independent of the dimension, and in many cases scales nearly optimally with the fraction of adversarially corrupted samples. Moreover, we develop a general recipe for detecting and correcting corruptions in high-dimensions, that may be applicable to many other problems.<br/><br/>
+
+Based on joint work with Ilias Diakonikolas, Gautam Kamath, Daniel Kane, Ankur Moitra, and Alistair Stewart.
+</div>
+</li>
+
+<li>
+<b>Wednesday, June 8, 2016</b>: <b><a href="https://sites.google.com/site/forsooth42/andrealincoln">Andrea Lincoln</a></b> (Stanford).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Deterministic Time-Space Tradeoffs for $k$-SUM</a>
+<div class="abs">
+<b>Abstract.</b> Given a set of numbers, the $k$-SUM problem asks for a subset of $k$ numbers that sums to zero. When the numbers are integers, the time and space complexity of $k$-SUM is generally studied in the word-RAM model; when the numbers are reals, the complexity is studied in the real-RAM model, and space is measured by the number of reals held in memory at any point.<br/><br/>
+
+  We present a time and space efficient deterministic self-reduction for the $k$-SUM problem which holds for both models, and has many interesting consequences. To illustrate:<br/><br/>
+
+  <ul style="list-style-type:disc">
+  <li> $3$-SUM is in deterministic time $O(n^2 \lg\lg(n)/\lg(n))$ and space $O(\sqrt{n \lg(n)/\lg\lg(n)})$, extending the results of Gold and Sharir.</li>
+  <li> $3$-SUM is in deterministic time $O(n^2)$ and space $O(\sqrt n)$, derandomizing an algorithm of Wang.</li>
+  <li> A popular conjecture states that $3$-SUM requires $n^{2-o(1)}$ time on the word-RAM. We show that the $3$-SUM Conjecture is in fact equivalent to the (seemingly weaker) conjecture that every $O(n^{.51})$-space algorithm for $3$-SUM requires at least $n^{2-o(1)}$ time on the word-RAM.</li>
+  </ul>
+
+  Joint work with Virginia Vassilevska Williams, Josh Wang and Ryan Williams.
+</div>
+</li>
+
+<li>
+<b>Wednesday, June 15, 2016</b>: <b><a href="http://toc.csail.mit.edu/user/137">Maryam Aliakbarpour</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Learning and Testing Junta Distributions</a>
+<div class="abs">
+<b>Abstract.</b> We consider the problem of learning distributions in the presence of irrelevant features. This problem is formalized by introducing a new notion of $k$-junta distributions. Informally, a distribution $\mathcal{D}$ over the domain $X^n$ is a $k$-junta distribution with respect to another distribution $\mathcal{U}$ over the same domain if there is a set $J \subseteq [n]$ of size $|J| \le k$ that captures the difference between $\mathcal{D}$ and $\mathcal{U}$.<br/><br/>
+
+We show that it is possible to learn $k$-junta distributions with respect to the uniform distribution over the Boolean hypercube $\{0,1\}^n$ in time $\mathrm{poly}(n^k, 1/\varepsilon)$. This result is obtained via a new Fourier-based learning algorithm inspired by the Low-Degree Algorithm of Linial, Mansour, and Nisan (1993).<br/><br/>
+
+We also consider the problem of testing whether an unknown distribution is a $k$-junta distribution with respect to the uniform distribution. We give a nearly-optimal algorithm for this task. Both the analysis of the algorithm and the lower bound showing its optimality are obtained by establishing connections between the problem of testing junta distributions and testing uniformity of weighted collections of distributions.<br/><br/>
+
+This is a joint work with Eric Blais and Ronitt Rubinfeld.
+</div>
+</li>
+
+<li>
+<b>Friday, June 17, 2016</b>: <b><a href="http://www.cmi.ac.in/~ramprasad/">Ramprasad Saptharishi</a></b> (Tel-Aviv University).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Depth Reduction for Arithmetic Circuits</a>
+<div class="abs">
+<b>Abstract.</b> In the recent years, there has been a lot of activity in arithmetic circuit lower bounds. A key first step in all these results is 'depth reduction' which is generically the task of simulating an arithmetic circuit by a very shallow (often like depth 4 or 3 even) circuit of not-too-much-larger size. This effectively has reduced the task of  proving lower bounds for general circuits to lower bounds for very shallow (and structured) circuits.<br/><br/>
+
+This talk shall be largely a survey of the work from the last few years, and also some concrete easy-to-state open problems. Following that, we'll review the classical depth reduction results, and also reduction to depth four via a slightly different proof. We shall then abstract the main ingredient in the proof and apply it to a subclass of formulas to obtain additional structure. Hopefully, this additional structure would be useful in coming up with techniques to prove formula lower bounds.
+</div>
+</li>
+
+<li>
+<b>Wednesday, July 6, 2016</b>: <b><a href="http://www.chrismusco.com/">Christopher Musco</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Iterative Sampling Methods for Low-Rank Matrix and Kernel Approximation</a>
+<div class="abs">
+<b>Abstract.</b> Low-rank matrix approximation and its close relative, principal component analysis, are ubiquitous in statistics and machine learning. To address computational concerns as data size increases, recent years have a seen a flurry of work on fast approximation algorithms for these problems. I'll present a line of research that introduces a new approach for low-rank approximation which gives strong provable guarantees for any data matrix. Our methods iteratively select a subsample of representative rows or columns from a matrix which are then used to compute approximate principal components.<br/><br/>
+
+Our methods match the runtimes guaranteed by the fastest known "random projection" methods for low-rank approximation. However, they can be much faster for sparse or structured data and can be applied to data problems where matrices are not represented explicitly. Specifically, combined with the Nystrom method, our sampling scheme gives the first algorithms for provably approximating kernel matrices in time <i>linear</i> in the number of data points. This leads to the fastest known methods for kernel ridge regression, kernel principal component analysis, kernel $k$-means clustering, and kernel canonical correlation analysis.<br/><br/>
+
+This talk is based on work with Michael B. Cohen and Cameron Musco that appears in preprints <a href="http://arxiv.org/abs/1511.07263">arXiv 1511.07263</a> and <a href="http://arxiv.org/abs/1605.07583">arXiv 1605.07583</a>.
+</div>
+</li>
+
+<li>
+<b>Wednesday, July 20, 2016</b>: <b><a href="http://www.mit.edu/~vakilian/">Ali Vakilian</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Streaming Algorithms for Set Cover Problem</a>
+<div class="abs">
+<b>Abstract.</b> We consider the classic Set Cover problem in the data stream model. For $n$ elements and $m$ sets we give a $O(1/\delta)$-pass algorithm with a strongly sub-linear $\widetilde{O}(mn^{\delta})$ space and logarithmic approximation factor. We complement this result by showing that the tradeoff between the number of passes and space exhibited by our algorithm is tight, at least when the approximation factor is equal to $1$. Specifically, we show that any algorithm that computes set cover exactly using $({1 \over 2\delta}-1)$ passes must use $\widetilde{\Omega}(m n^{\delta})$ space. Furthermore, we consider the problem in the geometric setting where the elements are points in $\mathbb{R}^2$ and sets are either discs, axis-parallel rectangles, or fat triangles in the plane, and show that our algorithm (with a slight modification) uses the optimal $\widetilde{O}(n)$ space to find a logarithmic approximation in $O(1/\delta)$ passes.<br/><br/>
+
+Finally, we show that any randomized one-pass algorithm that distinguishes between covers of size $2$ and $3$ must use a linear (i.e., $\Omega(mn)$) amount of space. This is the first result showing that a randomized, approximate algorithm cannot achieve a sub-linear space bound. This indicates that using multiple passes might be necessary in order to achieve sub-linear space bounds for this problem while guaranteeing small approximation factors.<br/><br/>
+
+This is based on joint work with Erik Demaine, Sariel Har-Peled, Piotr Indyk and Sepideh Mahabadi.
+</div>
+</li>
+
+<li>
+<b>Thursday, August 4, 2016</b>: <b><a href="http://www.cs.princeton.edu/~garg/">Ankit Garg</a></b> (Microsoft Research New England).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">On algorithmic aspects of Brascamp-Lieb inequalities</a>
+<div class="abs">
+<b>Abstract.</b> The celebrated Brascamp-Lieb (BL) inequalities (and their extensions) are an important mathematical tool, unifying and generalizing numerous inequalities in analysis, convex geometry and information theory. While their structural theory is very well understood, far less is known about computing their main parameters. We give polynomial time algorithms to compute:<br/><br/>
+<ul style="list-style-type:disc">
+<li>Feasibility of BL-datum</li>
+<li>The optimal BL-constant</li>
+<li>A weak separation oracle for the BL-polytope</li>
+</ul>
+This will be based on <a href="https://arxiv.org/abs/1607.06711">joint work</a> with Leonid Gurvits, Rafael Oliveira and Avi Wigderson.<br/><br/>
+
+The algorithms are obtained by a simple efficient reduction of a given BL-datum to an instance of the Operator Scaling problem defined by Gurvits, for which the present authors provided a <a href="https://arxiv.org/abs/1511.03730">polynomial time algorithm</a> recently.
+</div>
+</li>
+
+<li>
+<b>Tuesday, August 23, 2016</b>: <b><a href="http://www.cs.huji.ac.il/~yonatanm/">Jonathan Mosheiff</a></b> (Hebrew University).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">On the Rigidity of Sparse Random Graphs</a>
+<div class="abs">
+<b>Abstract.</b> It is a truth universally acknowledged, that random objects are asymmetric. It was shown by Wright (1971) that for $p$ slightly larger than $\log n / n$ a random $G(n,p)$ graph has, whp, a trivial automorphism group. This bound is tight, since a graph of slightly smaller density is likely to have isolated vertices. Our work concerns sparser graphs, where the average degree still goes to infinity but $p$ is below Wright's threshold. We show that in this range, whp all of $G$'s automorphisms are essentially trivial. More concretely, it holds almost surely that $G$'s $2$-core (i.e., the maximal subgraph of $G$ with minimal degree at least $2$) has only the trivial automorphism. Our theorem yields some interesting insights on the graph reconstruction conjecture, as well as a new algorithm for random graph canonical labeling.<br/><br/>
+
+This is a joint work with Nati Linial.
+</div>
+</li>
+
+<li>
+<b>Wednesday, August 24, 2016</b>: <b><a href="http://www.cse.wustl.edu/~bjuba/">Brendan Juba</a></b> (Washington Univ. in St. Louis).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Conditional Sparse Linear Regression</a>
+<div class="abs">
+<b>Abstract.</b> We consider the problem of jointly identifying a significant (but perhaps small) segment of a population in which there is a highly sparse linear regression fit, together with the coefficients for the linear fit. This is intended to serve as a principled alternative to the practice of clustering the data under a variety of methods to see if any yield clusters that can be modeled well. We give algorithms for such problems when this unknown segment of the population ("cluster") is described by a $k$-DNF condition and the regression fit is $s$-sparse for constant $k$ and $s$. We note evidence that $k$-DNFs are essentially the most expressive natural representation for which this problem is tractable.<br/><br/>
+
+Based on joint work with Ben Moseley (WUSTL).
+</div>
+</li>
+
+<li>
+<b>Wednesday, September 21, 2016</b>: <b><a href="http://eccc.hpi-web.de/author/911/">Ofer Grossman</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Bipartite Perfect matching in Pseudo-deterministic $NC$</a>
+<div class="abs">
+<b>Abstract.</b> Pseudo-deterministic algorithms are randomized search algorithms that on different executions on the same input, output the same solution with high probability.<br/><br/>
+
+We will discuss how pseudo-deterministic algorithms bridge the gap between randomized search and decision problems for problems in $P$ and in $NC$. Next, we will show a pseudo-deterministic $NC$ algorithm for bipartite matching. Finally, we will show how pseudo-determinism can be used to save on random bits used by classical randomized algorithms.<br/><br/>
+
+Joint work with Shafi Goldwasser.
+</div>
+</li>
+
+<li>
+<b>Wednesday, September 28, 2016</b>: <b><a href="http://cs.yale.edu/homes/rjkyng/">Rasmus Kyng</a></b> (Yale).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Approximate Gaussian Elimination for Laplacians</a>
+<div class="abs">
+<b>Abstract.</b> We show how to perform sparse approximate Gaussian elimination for Laplacian matrices. We present a simple, nearly linear time algorithm that approximates a Laplacian by a matrix with a sparse Cholesky factorization – the version of Gaussian elimination for positive semi-definite matrices. We compute this factorization by subsampling standard Gaussian elimination. This is the first nearly linear time solver for Laplacian systems that is based purely on random sampling, and does not use any graph theoretic constructions such as low-stretch trees, sparsifiers, or expanders. The crux of our proof is the use of matrix martingales to analyze the algorithm.<br/><br/>
+
+Joint work with Sushant Sachdeva.
+</div>
+</li>
+
+<li>
+<b>Wednesday, October 12, 2016</b>: <b><a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a></b> (USC).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">A New Approach for Distribution Testing</a>
+<div class="abs">
+<b>Abstract.</b> We study problems in distribution property testing: Given sample access to one or more unknown discrete distributions, we want to determine whether they have some global property or are $\varepsilon$-far from having the property in $\ell_1$ distance. We provide a simple and general approach to obtain upper bounds in this setting, by reducing $\ell_1$-testing to $\ell_2$-testing. Our reduction yields optimal $\ell_1$-testers, by using a standard $\ell_2$-tester as a black-box.<br/><br/>
+
+Using our framework, we obtain optimal estimators for a wide variety of $\ell_1$ distribution testing problems, including the following: identity testing to a fixed distribution, closeness testing between two unknown distributions (with equal/unequal sample sizes), independence testing (in any number of dimensions), closeness testing for collections of distributions, and testing $k$-flatness. For several of these problems, we give the first optimal tester in the literature. Moreover, our estimators are significantly simpler to state and analyze compared to previous approaches.<br/><br/>
+
+As our second main contribution, we provide a direct general approach for proving distribution testing lower bounds, by bounding the mutual information. Our lower bound approach is not restricted to symmetric properties, and we use it to prove tight lower bounds for all the aforementioned problems.<br/><br/>
+
+Joint work with Daniel Kane.
+</div>
+</li>
+
+<li>
+<b>Wednesday, October 19, 2016</b>: <b><a href="http://math.mit.edu/~awein/">Alex Wein</a></b> (MIT). <font color="red">(Room: 32-D507)</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Optimality and sub-optimality of PCA for spiked random matrix models</a>
+<div class="abs">
+<b>Abstract.</b> Classical results from random matrix theory state that if a random (Wigner or Wishart) matrix is perturbed by a planted rank-$1$ signal (or "spike"), this spike affects the top eigenvalue if and only if the size of the spike exceeds a particular threshold. In particular, above this threshold the top eigenvalue is a reliable test to distinguish the spiked and un-spiked models. We consider the question of whether this eigenvalue test is optimal, or whether there is some other statistical test that can succeed below the eigenvalue threshold.<br/><br/>
+
+We answer these types of questions using a simple and widely-applicable technique associated with the statistical notion of "contiguity." Namely, by computing a particular second moment, one can show that two models are contiguous and therefore cannot be reliably distinguished.<br/><br/>
+
+Our results include:<br/><br/>
+<ol>
+<li> For the Gaussian Wigner ensemble, we show that PCA achieves the optimal detection threshold for a variety of natural priors for the spike.</li>
+<li> For any non-Gaussian Wigner ensemble, we show that PCA is always sub-optimal for detection (contrary to the notion of universality from random matrix theory). However, a variant of PCA achieves the optimal threshold (for natural priors) by pre-transforming the matrix entrywise.</li>
+<li> For the Wishart ensemble we show that in some regimes, inefficient algorithms can succeed below the PCA threshold, whereas no known efficient algorithm achieves this.</li>
+</ol>
+
+Based on joint work with Amelia Perry, Afonso Bandeira, and Ankur Moitra. Available at <a href="https://arxiv.org/abs/1609.05573">arXiv:1609.05573</a>.
+</div>
+</li>
+
+<li>
+<b>Wednesday, October 26, 2016</b>: <b><a href="http://web.mit.edu/gelash/www/">Rati Gelashvili</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Time-Space Trade-Offs in Molecular Computation</a>
+<div class="abs">
+<b>Abstract.</b> Population protocols are a popular model of distributed computing, in which randomly-interacting agents with little computational power cooperate to jointly perform computational tasks. Inspired by developments in molecular computation, and in particular DNA computing, recent algorithmic work has focused on the complexity of solving simple yet fundamental tasks in the population model, such as leader election (which requires convergence to a single agent in a special "leader" state), and majority (in which agents must converge to a decision as to which of two possible initial states had higher initial count). Known results point towards an inherent trade-off between the time complexity of such algorithms, and the space complexity, i.e. size of the memory (number of states) available to each agent.<br/><br/>
+
+I will overview different results with a spectrum of time-space guarantees for these tasks, culminating in algorithms showing that fast, poly-logarithmic convergence time can be achieved using $O(\log^2 n)$ space per node in both cases. I will also present a unified lower bound, which relates the space available per node with the time complexity achievable by a protocol: for instance, any protocol solving either of these tasks for $n$ agents using $O(\log \log n)$ states must take $\Omega(n / \mathrm{poly}\log n)$ expected time. This is the first result to characterize time complexity for protocols which employ super-constant number of states per node, and proves that fast, poly-logarithmic running times require protocols to have relatively large space costs. Overall, these results highlight a time complexity separation between $O(\log \log n)$ and $\Theta(\log^2 n)$ state space size for both majority and leader election, and introduce new techniques, which should be applicable more broadly.<br/><br/>
+
+This is based on joint works with Dan Alistarh, James Aspnes, David Eisenstat, Ronald L. Rivest and Milan Vojnovic.
+</div>
+</li>
+
+<li>
+<b>Wednesday, November 9, 2016</b>: <b><a href="https://sites.google.com/site/huylenguyen/">Huy L. Nguyen</a></b> (NEU).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Communication Lower Bounds for Statistical Estimation Problems via a Distributed Data Processing Inequality</a>
+<div class="abs">
+<b>Abstract.</b> We study the tradeoff between the statistical error and communication cost of distributed statistical estimation problems in high dimensions. In the distributed sparse Gaussian mean estimation problem, each of the $m$ machines receives $n$ data points from a $d$-dimensional Gaussian distribution with unknown mean $\theta$ which is promised to be $k$-sparse. The machines communicate by message passing and aim to estimate the mean $\theta$. We provide a tight (up to logarithmic factors) tradeoff between the estimation error and the number of bits communicated between the machines. This directly leads to a lower bound for the distributed sparse linear regression problem: to achieve the statistical minimax error, the total communication is at least $\Omega(\min\{n, d\}m)$, where $n$ is the number of observations that each machine receives and $d$ is the ambient dimension. We also give the first optimal simultaneous protocol in the dense case for mean estimation. As our main technique, we prove a distributed data processing inequality, as a generalization of usual data processing inequalities, which might be of independent interest and useful for other problems.<br/><br/>
+
+This is joint work with Mark Braverman, Ankit Garg, Tengyu Ma, and David Woodruff.
+</div>
+</li>
+
+<li>
+<b>Wednesday, November 30, 2016</b>: <b><a href="https://www.cs.princeton.edu/~tengyu/">Tengyu Ma</a></b> (Princeton).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Analyzing non-convex optimization: matrix completion and linear residual networks</a>
+<div class="abs">
+<b>Abstract.</b> Non-convex optimization is the main algorithmic technique behind many state-of-art results in machine learning. It has been conjectured that the landscape of many training objectives has the nice geometric property that "all local minima are global minima" and thus admits efficient optimization algorithms.<br/><br/>
+
+In the first part of the talk, I will show that the optimization landscape of matrix completion — a famous problem in ML with wide applications in recommender system and collaborative filtering — does have this property. This implies that (stochastic) gradient descent from arbitrary initialization can solve matrix completion in polynomial time.<br/><br/>
+
+Next, we will discuss linear residual networks, as a simplified model towards the first-cut understanding of residual networks. We will give a strikingly simple proof that arbitrarily deep linear residual networks have no spurious critical points (= points with vanishing gradient that are not global minima). In contrast, the landscape of standard linear neural networks does have spurious critical points. This demonstrates that re-parameterization using the identity shortcut connection can make the optimization easier.<br/><br/>
+
+Based on joint works <a href="https://arxiv.org/abs/1605.07272">arXiv:1605.07272</a> with Rong Ge and Jason D. Lee, and <a href="https://arxiv.org/abs/1611.04231">arXiv:1611.04231</a> with Moritz Hardt.
+</div>
+</li>
+
+<li>
+<b>Wednesday, December 7, 2016</b>: <b><a href="http://toc.csail.mit.edu/user/237">Dhiraj Holden</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Solving problems in $P$ given correlated instances</a>
+<div class="abs">
+<b>Abstract.</b> Instances of computational problems do not arise in isolation. Often, correlations between the solutions of related instances arise in nature. We study the impact of having access to correlated instances on how fast we can solve a variety of problems. In particular, we look at the longest common subsequence, edit distance, and dynamic time warping distance problems, all of which cannot be solved in time $n^{2 - \varepsilon}$ assuming the Strong Exponential Time Hypothesis. We give results for two correlation models, a model where the solution corresponds exactly to structure in the correlated instances, and one where each part of the solution is used in the correlated instance with high probability. In both cases we are able to achieve strongly subquadratic time algorithms, and when we have an exact correspondence in the solutions we can solve all of these problems in near-linear time. We view our work as pointing out a new avenue for looking for significant improvements for sequence alignment problems and computing similarity measures, by taking advantage of access to sequences which are correlated through natural generating processes. In this first work we show how to take advantage of mathematically inspired simple clean models of correlation -- the intriguing question, looking forward, is to find correlation models which coincide with evolutionary models and other relationships and for which our approach to multiple sequence alignment gives provable guarantees.<br/><br/>
+
+Joint work with Shafi Goldwasser. Paper available at <a href="http://eccc.hpi-web.de/report/2016/056/">ECCC TR16-056</a>.
+</div>
+</li>
+
+<li>
+<b>Thursday, December 8, 2016</b>: <b><a href="http://www.tks.informatik.uni-frankfurt.de/monemizadeh">Morteza Monemizadeh</a></b> (Rutgers). <font color="red">(Room: 32-G882)</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Testable Bounded Degree Graph Properties Are Random Order Streamable</a>
+<div class="abs">
+<b>Abstract.</b> We study graph streaming problems. We transform known property testing algorithms into streaming ones. In particular, our main result is that for bounded degree graphs, any property that is constant-query testable in the adjacent list model can be solved with constant space in single-pass random order model. Our results are obtained by estimating the distribution of what are known as $k$-discs used in property testing methods, directly on a random order graph stream with constant space.<br/><br/>
+
+We also apply this approach to constant time approximation algorithms in the adjacency list model and get single-pass random order streaming algorithms for all of them. For example, we get constant-space single-pass random order streaming algorithms for $(1,\varepsilon n)$-approximating maximal matching to additive $\varepsilon n$ error.<br/><br/>
+
+Our results are among the first known truly sublinear space graph streaming algorithms, while $\Omega(n)$ space is needed for many graph streaming problems ($n$ is the number of nodes) and previous results typically use the semi-streaming model of $O(n \cdot \mathrm{polylog}(n))$ space.<br/><br/>
+
+Joint work with S. Muthukrishnan, Pan Peng, Christian Sohler.
+</div>
+</li>
+
+<li>
+<b>Wednesday, March 1, 2017</b>: <b><a href="http://www.cs.cmu.edu/~nhaghtal/">Nika Haghtalab</a></b> (CMU).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Opting Into Optimal Matchings</a>
+<div class="abs">
+<b>Abstract.</b> Kidney transplant is sometimes the best treatment for people who suffer from chronic kidney disease. However, due to medical incompatibility issues, a direct kidney transplant is not always possible even for those patients that are fortunate enough to have a willing donor. This is where Kidney Exchange comes in: It enables two or more donor-patient pairs to swap donors, so that each patient receives a compatible kidney. In recent years, hospitals have enrolled patients into regional or even national kidney exchange programs. However, hospitals may choose not to participate if they can match more of their own patients on their own -- economists would say that the exchange is not individually rational for hospitals. This behavior significantly reduces the social welfare -- the total number of patients that receive a kidney transplant.<br/><br/>
+
+In this work, we revisit the problem of designing optimal, individually rational kidney exchange mechanisms. We offer a new perspective on this problem by showing that under mild probabilistic assumptions, any optimal kidney exchange is likely to be individually rational up to lower-order terms. We also show that a simple and practical mechanism is (fully) individually rational, and likely to be optimal up to lower-order terms.<br/><br/>
+
+This talk is based on joint work with Avrim Blum, Ioannis Caragiannis, Ariel Procaccia, Eviatar Procaccia, and Rohit Vaish (SODA'17).
+</div>
+</li>
+
+<li>
+<b>Thursday, March 2, 2017</b>: <b><a href="http://www.cs.toronto.edu/~yuvalf/">Yuval Filmus</a></b> (Technion).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Twenty (simple) questions</a>
+<div class="abs">
+<b>Abstract.</b> The game of 20 questions is a search-theoretic interpretation of entropy. Alice chooses a number $x \in \{1,\ldots,n\}$ according to a known distribution $\mu$, and Bob identifies $x$ using Yes/No questions. Bob's goal is to minimize the expected number of questions until $x$ is identified, and his optimal strategy uses about $H(\mu)$ questions on average. However, it might invoke arbitrary Yes/No questions.<br/><br/>
+
+Are there restricted sets of questions that match the optimal strategy, either exactly or approximately?<br/><br/>
+
+We explore this question from several different angles, uncovering a connection to binary comparison search trees, a variant of binary search trees.<br/><br/>
+
+Joint work with Yuval Dagan, Ariel Gabizon and Shay Moran, to appear in STOC 2017.
+</div>
+</li>
+
+<li>
+<b>Wednesday, March 15, 2017</b>: <b><a href="http://www.cs.tau.ac.il/~deandoron/">Dean Doron</a></b> (Tel-Aviv University).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Explicit two-source extractors for near-logarithmic min-entropy</a>
+<div class="abs">
+<b>Abstract.</b> In this talk, we show an explicit construction of extractors for two independent sources of near-logarithmic min-entropy. Previous constructions required either $\mathrm{polylog}(n)$ min-entropy or more than two sources.<br/><br/>
+
+The result extends the breakthrough result of Chattopadhyay and Zuckerman and also uses non-malleable extractors. The main new ingredient is a somewhere-random condenser with a small entropy gap, used as a sampler.<br/><br/>
+
+Our construction can be seen as an efficient reduction to constructing non-malleable extractors, so using very recent constructions of non-malleable extractors (by Cohen and Li) - we will see how to obtain explicit two-source extractor for $O(\log n \cdot \log\log n)$ min-entropy and constant error.
+</div>
+</li>
+
+<li>
+<b>Wednesday, April 5, 2017</b>: <b><a href="http://www.cs.columbia.edu/~ccanonne/">Clément Canonne</a></b> (Columbia University).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Fifty Shades of Adaptivity (in Property Testing)</a>
+<div class="abs">
+<b>Abstract.</b>  Adaptivity is known to play a crucial role in property testing. In particular, there exist properties for which there is an exponential gap between the power of <i>adaptive</i> testing algorithms, wherein each query may be determined by the answers received to prior queries, and their <i>non-adaptive</i> counterparts, in which all queries are independent of answers obtained from previous queries.<br/><br/>
+
+In this work, we investigate the role of adaptivity in property testing at a finer level. We first quantify the degree of adaptivity of a testing algorithm by considering the number of "rounds of adaptivity" it uses. More accurately, we say that a tester is $k$-(round) adaptive if it makes queries in $k+1$ rounds, where the queries in the $i$'th round may depend on the answers obtained in the previous $i-1$ rounds. Then, we ask the following question:<br/><br/>
+
+<i>Does the power of testing algorithms smoothly grow with the number of rounds of adaptivity?</i><br/><br/>
+
+We provide a positive answer to the foregoing question by proving an adaptivity hierarchy theorem for property testing. Specifically, our main result shows that for every integer $n$ and $0 \leq k \leq n^{0.33}$ there exists a property $P_{n,k}$ of functions for which (1) there exists a $k$-adaptive tester for $P_{n,k}$ with query complexity $\tilde{O}(k)$, yet (2) any $(k-1)$-adaptive tester for $P_{n,k}$ must make $\tilde{\Omega}(n/k^2)$ queries. In addition, we show that such a qualitative adaptivity hierarchy can be witnessed for testing natural properties of graphs.<br/><br/>
+
+Joint work with Tom Gur (Weizmann Institute).
+</div>
+</li>
+
+<li>
+<b>Thursday, April 6, 2017</b>: <b><a href="http://richb.rice.edu/">Richard Baraniuk</a></b> (Rice University). <font color="red">(3-4pm; Room: 32-D463 [Star])</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">A Probabilistic Theory of Deep Learning</a>
+<div class="abs"><!-- style="display:block" -->
+<b>Abstract.</b> A grand challenge in machine learning is the development of computational algorithms that match or outperform humans in perceptual inference tasks that are complicated by nuisance variation. For instance, visual object recognition involves the unknown object position, orientation, and scale in object recognition while speech recognition involves the unknown voice pronunciation, pitch, and speed. Recently, a new breed of deep learning algorithms have emerged for high-nuisance inference tasks that routinely yield pattern recognition systems with near- or super-human capabilities. But a fundamental question remains: Why do they work? Intuitions abound, but a coherent framework for understanding, analyzing, and synthesizing deep learning architectures has remained elusive. We answer this question by developing a new probabilistic framework for deep learning based on the Deep Rendering Model: a generative probabilistic model that explicitly captures latent nuisance variation. By relaxing the generative model to a discriminative one, we can recover two of the current leading deep learning systems, deep convolutional neural networks and random decision forests, providing insights into their successes and shortcomings, a principled route to their improvement, and new avenues for exploration.<br/><br/>
+
+<b>Speaker Bio.</b> Richard G. Baraniuk is the Victor E. Cameron Professor of Electrical and Computer Engineering at Rice University. His research interests lie in  new theory, algorithms, and hardware for sensing, signal processing, and machine learning. He is a Fellow of the IEEE, AAAS, and the National Academy of Inventors and has received the DOD Vannevar Bush Faculty Fellowship (NSSEFF), national young investigator awards from the US NSF and ONR, the Rosenbaum Fellowship from the Isaac Newton Institute of Cambridge University, the ECE Young Alumni Achievement Award from the University of Illinois, the Wavelet Pioneer and Compressive Sampling Pioneer Awards from SPIE, the IEEE Signal Processing Society Best Paper Award, and the IEEE Signal Processing Society Technical Achievement Award. His work on the Rice single-pixel compressive camera has been widely reported in the popular press and was selected by MIT Technology Review as a TR10 Top 10 Emerging Technology. For his teaching and education projects, including Connexions (<a href="cnx.org">cnx.org</a>) and OpenStax (<a href="openstax.org">openstax.org</a>), he has received the C. Holmes MacDonald National Outstanding Teaching Award from Eta Kappa Nu, the Tech Museum of Innovation Laureate Award, the Internet Pioneer Award from Harvard University, the World Technology Award for Education, the IEEE-SPS Education Award, the WISE Education Award, and the IEEE James H. Mulligan, Jr. Medal for Education.
+</div>
+</li>
+
+<li>
+<b>Wednesday, April 12, 2017</b>: <b><a href="http://www.math.toronto.edu/rossman/">Benjamin Rossman</a></b> (U. Toronto).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">New separations of formula vs. circuit size</a>
+<div class="abs">
+<b>Abstract.</b> I will present some recent results on the power of formulas vs. circuits in the bounded-depth setting. In joint work with Srikanth Srinivasan, we obtain a nearly optimal separation between the $\mathrm{AC}^0[\oplus]$ formula vs. circuit size of the Approximate Majority function.  In other work, we show that the $\mathrm{AC}^0$ circuit (resp. formula) size of the $H$-Subgraph Isomorphism problem is tied to the treewidth (resp. treedepth) of the pattern graph $H$.  The latter formula-size lower bound relies on a new "excluded-minor approximation" of treedepth (joint with Kenich Kawarabayashi).  The former is based on an improved construction of low-degree approximating polynomials for $\mathrm{AC}^0[\oplus]$ formulas.
+</div>
+</li>
+
+<li>
+<b>Thursday, April 20, 2017</b>: <b><a href="http://www.cs.huji.ac.il/~italgam/">Inbal Cohen</a></b> (Hebrew University of Jerusalem).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Approximate Modularity Revisited</a>
+<div class="abs">
+<b>Abstract.</b> Set functions with convenient properties (such as submodularity) often arise in algorithmic game theory, and allow for improved properties of optimization algorithms and mechanisms. It is natural to ask (e.g., in the context of data driven applications) how robust such properties are, and whether small deviations from them can be tolerated. We consider two such questions in the important special case of linear set functions. One question that we address is whether any set function that approximately satisfies the modularity equation (linear functions satisfy the modularity equation exactly) is close to a linear function. The answer to this is positive (in a precise formal sense) as shown by Kalton and Roberts [1983] (and further improved by Bondarenko, Prymak, and Radchenko [2013]). We revisit their proof idea that is based on expander graphs, and provide significantly stronger upper bounds by combining it with new techniques. Furthermore, we provide improved lower bounds for this problem. Another question that we address is that of how to learn a linear function $h$ that is close to an approximately linear function $f$, while querying the value of $f$ on only a small number of sets.<br/><br/>
+
+Joint work with Uriel Feige and Michal Feldman.
+</div>
+</li>
+
+<li>
+<b>Wednesday, May 10, 2017</b>: <b><a href="http://www.mit.edu/~govind/">Govind Ramnarayan</a></b> (MIT). <font color="red">(Room: 32-D463)</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Relaxed Locally Correctable Codes</a>
+<div class="abs">
+<b>Abstract.</b> Locally decodable codes (resp. locally correctable codes), or LDCs (resp. LCCs), are codes for which individual symbols of the message (resp. codeword) an be recovered by reading just a few bits from a noisy codeword. Such codes have been very useful in theory and practice, but suffer from a poor tradeoff between the rate of the code and the query complexity of its local decoder (resp. corrector).<br/><br/>
+
+A natural relaxation of locally decodable codes (LDCs) considered by Ben-Sasson et al. (SICOMP, 2006) allows the decoder to "reject" when it sees too many errors to decode the desired symbol of the message. They show that, when the decoder is given this liberty, there exist codes with rate that is subexponentially better than that of the best constant-query locally decodable codes known today.<br/><br/>
+
+We extend their relaxation to locally correctable codes, and achieve similar savings in complexity compared to existing LCCs. Specifically, our codes have:<br/><br/>
+<ol>
+<li>Subexponentially lower rate than existing LCCs in the constant-query regime.</li>
+<li>Nearly subexponentially lower query complexity than existing LCCs in the constant-rate regime.</li>
+</ol>
+
+Joint work with Tom Gur and Ron Rothblum.
+</div>
+</li>
+
+<li>
+<b>Thursday, May 11, 2017</b>: <b><a href="http://drona.csa.iisc.ernet.in/~arnabb/">Arnab Bhattacharyya</a></b> (Indian Institute of Science). <font color="red">(Time: 2-3pm)</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Hardness of learning noisy halfspaces using polynomial thresholds</a>
+<div class="abs">
+<b>Abstract.</b> We prove the hardness of weakly learning halfspaces in the presence of adversarial noise using polynomial threshold functions (PTFs), assuming Khot's Unique Games Conjecture (UGC). In particular, we prove that for any constants $d \in \mathbb{N}$ and $\varepsilon > 0$, assuming the UGC, it is NP-hard to decide: given a set of $\{-1,1\}$-labeled points in $\mathbb{R}^n$ whether<br/>
+(YES Case) there exists a halfspace that classifies $(1-\varepsilon)$-fraction of the points correctly, or <br/>
+(NO Case) any degree-$d$ PTF classifies at most $(1/2 + \varepsilon)$-fraction of the points correctly.<br/><br/>
+This strengthens to all constant degrees the previous NP-hardness of learning using degree-$2$ PTFs shown by Diakonikolas et al. (2011). The latter result had remained the only progress over the works of Feldman et al. (2006) and Guruswami et al. (2006) ruling out weakly proper learning adversarially noisy halfspaces.<br/><br/>
+
+Joint work with Suprovat Ghoshal (IISc) and Rishi Saket (IBM).
+</div>
+</li>
+
+<li>
+<b>Wednesday, May 24, 2017</b>: <b><a href="http://joshalman.com/">Josh Alman</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Cell-Probe Lower Bounds from Online Communication Complexity</a>
+<div class="abs">
+<b>Abstract.</b> In this work, we introduce an online model for communication complexity. Analogous to how online algorithms receive their input piece-by-piece, our model presents one of the players Bob his input piece-by-piece, and has the players Alice and Bob cooperate to compute a result it presents Bob with the next piece. This model has a closer and more natural correspondence to dynamic data structures than the classic communication models do and hence presents a new perspective on data structures.<br/><br/>
+
+We first present a lower bound for the online set intersection problem in the online communication model, demonstrating a general approach for proving online communication lower bounds. The online communication model prevents a batching trick that classic communication complexity allows, and yields a stronger lower bound. Then we apply the online communication model to data structure lower bounds by studying the Group Range Problem, a dynamic data structure problem. This problem admits an $O(\log n)$-time worst-case data structure. Using online communication complexity, we prove a tight cell-probe lower bound: spending $o(\log n)$ (even amortized) time per operation results in at best an $\mathrm{exp}(−\delta^2 n)$ probability of correctly answering a $(1/2 + \delta)$-fraction of the $n$ queries.<br/><br/>
+
+Joint work with Joshua Wang and Huacheng Yu.
+</div>
+</li>
+
+<li>
+<b>Wednesday, May 31, 2017</b>: <b><a href="https://sites.google.com/site/andrealiresume/">Andrea Lincoln</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Conditional Hardness for Sensitivity Problems</a>
+<div class="abs">
+<b>Abstract.</b> In recent years it has become popular to study dynamic problems in a sensitivity setting: Instead of allowing for an arbitrary sequence of updates, the sensitivity model only allows to apply batch updates of small size to the <i>original</i> input data. The sensitivity model is particularly appealing since recent strong conditional lower bounds ruled out fast algorithms for many dynamic problems, such as shortest paths, reachability, or subgraph connectivity.<br/><br/>
+
+In this paper we prove conditional lower bounds for these and additional problems in a sensitivity setting. For example, we show that under the Boolean Matrix Multiplication (BMM) conjecture combinatorial algorithms cannot compute the diameter of an undirected unweighted dense graph with truly subcubic preprocessing time and truly subquadratic update/query time. This result is surprising since in the static setting it is not clear whether a reduction from BMM to diameter is possible.<br/><br/>
+
+We further show under the BMM conjecture that many problems, such as approximate shortest paths, cannot be solved faster than by recomputation from scratch even after <i>only one or two</i> edge insertions. We further give a reduction from All Pairs Shortest Paths to Diameter under 1 deletion in weighted graphs. This is intriguing, as in the static setting it is a big open problem whether Diameter is as hard as APSP. We further get a nearly tight lower bound for shortest paths after two edge deletions based on the APSP conjecture. We give more lower bounds under the Strong Exponential Time Hypothesis. Many of our lower bounds also hold for static oracle data structures where no sensitivity is required.<br/><br/>
+
+Joint work with: Monika Henzinger, Stefan Neumann and Virginia Vassilevska Williams.
+</div>
+</li>
+
+<li>
+<b>Wednesday, July 5, 2017</b>: <b><a href="http://mathematics.jhu.edu/directory/harry-lang/">Harry Lang</a></b> (Johns Hopkins U.).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Coresets for $k$-Means-Type Problems on Streams</a>
+<div class="abs">
+<b>Abstract.</b> Let $f$ be a non-negative symmetric dissimilarity measure. Given sets of points $P$ (the input data) and $C$ (a "query"), we define $F(P,C) = \sum_{p \in P} \min_{c \in C} f(p,c)$. An example that fits into this framework is $k$-means clustering where $f = \text{distance}^2$ and we restrict $|C| = k$.<br/><br/>
+
+An $\varepsilon$-coreset for $P$ is a set $Q$ such that $F(Q,C)$ is within a factor of $(1 + \varepsilon)$ of $F(P,C)$ for any query $C$. For data reduction, the goal is to construct a coreset $Q$ of minimal cardinality. We introduce improved coreset constructions for a wide class of functions that obey a weak form of the triangle inequality: this includes $k$-means, $k$-median, Tukey's bi-weight function, and the Huber loss function.<br/><br/>
+
+In the streaming model, the input $P$ (a set of $n$ points) arrives sequentially and algorithms attempt to maintain a coreset using a minimal amount of memory. We introduce a new technique for maintaining coresets in the streaming model with $O(1)$ overhead. For example, the previous state-of-the-art for maintaining an $\varepsilon$-coreset for metric $k$-means on a stream required the storage of $O(\varepsilon^{-4} k \log k \log^6 n)$ points whereas our method requires $O(\varepsilon^{-2} k \log k \log n)$ points.<br/><br/>
+
+Joint work with Vladimir Braverman and Dan Feldman.
+</div>
+</li>
+</ul>
+~~~
+
+== Theory Calendar
+Add this calendar to yours to receive details about upcoming events in the Theory group\n
+(includes [acseminar.html A&C Seminars], [http://toc.csail.mit.edu/node/424 TOC Colloquium], [http://toc.csail.mit.edu/node/428 CIS Seminars], [https://sites.google.com/site/theorylunch2016/home Theory Lunch], TOC tea and more!) :
+{{<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r9nl2sjnqb0nccl0mllim32p2s%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="600" height="250" frameborder="0" scrolling="no"></iframe>}}\n
+Click on the events above to get more description about the same (title/abstract for talks, etc.)
+
+== Earlier Editions of A&C Seminar
+- [http://people.csail.mit.edu/madhu/algcomp/ST06/algcompsem-ST06.html Spring 2006]
+- [http://people.csail.mit.edu/madhu/algcomp/FT06/algcompsem-FT06.html Fall 2006]
+- [http://people.csail.mit.edu/madhu/algcompsem.html Spring 2007]
+- [http://people.csail.mit.edu/nickh/algcompsem.html Fall 2007]
+- [http://people.csail.mit.edu/ningxie/algcompsem.html Spring 2008]
+- [http://people.csail.mit.edu/madry/algcompsem/Fall2008/ Fall 2008]
+- [http://people.csail.mit.edu/madry/algcompsem/Spring2009/ Spring 2009]
+- [http://people.csail.mit.edu/madry/algcompsem/Fall2009/ Fall 2009]
+- [http://people.csail.mit.edu/madry/algcompsem/Spring2010/ Spring 2010]
+- [http://people.csail.mit.edu/madry/algcompsem/Fall2010/ Fall 2010]
+- [http://people.csail.mit.edu/madry/algcompsem/Spring2011/ Spring 2011]
+- [http://www.mit.edu/~ecprice/algcompsem/1112/ Fall 2011, Spring 2012]
+- [http://www.mit.edu/~ecprice/algcompsem/ Fall 2012, Spring 2013]
+- [http://ilyaraz.org/acseminar/index1314.html Fall 2013, Spring 2014]
+- [http://ilyaraz.org/acseminar/index1415.html Fall 2014, Spring 2015]
+- [http://ilyaraz.org/acseminar/ Fall 2015, Spring 2016]

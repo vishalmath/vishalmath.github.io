@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Algorithms &amp; Complexity Seminar, MIT : 2017-18</title>
+<style type="text/css">
+.abs {
+ background-color: #dae2f1;
+ max-width: 800px;
+ padding: 7px;
+ display: none;
+}
+li{
+    margin-top: 10px;
+}
+li:first-child {
+    margin-top:0;
+}
+</style>
+<script type="text/javascript">
+function showAbstract(e){
+   f = e;
+   var div;
+   for(div = e.nextSibling; div.className != "abs"; div = div.nextSibling);
+   if (div.style.display=="block"){
+     div.style.display="";
+   } else {
+     div.style.display="block";
+   }
+   return true;
+}
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+                "HTML-CSS": {
+                    availableFonts: ["Asana-Math"],
+                    preferredFont: "Asana-Math"
+                }
+});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">TOC Group links</div>
+<div class="menu-item"><a href="http://toc.csail.mit.edu/index">TOC&nbsp;Home</a></div>
+<div class="menu-item"><a href="toc_calendar.html">TOC&nbsp;Calendar</a></div>
+<div class="menu-category">Seminars</div>
+<div class="menu-item"><a href="http://toc.csail.mit.edu/node/424">TOC&nbsp;Colloquium</a></div>
+<div class="menu-item"><a href="acseminar.html" class="current">A&amp;C&nbsp;Seminar</a></div>
+<div class="menu-item"><a href="http://toc.csail.mit.edu/node/428">CIS&nbsp;Seminar</a></div>
+<div class="menu-item"><a href="https://sites.google.com/site/theorylunch2016/home">Theory&nbsp;Lunch</a></div>
+<div class="menu-item"><a href="http://people.csail.mit.edu/madry/reading-group/">Harvard/MIT/MSR<br /> Reading&nbsp;Group</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Algorithms &amp; Complexity Seminar, MIT : 2017-18</h1>
+</div>
+<p><b>Organizers:</b> <a href="http://toc.csail.mit.edu/user/198">Akshay Degwekar</a> (<img class="eq" src="eqs/1686749381952327874-130.png" alt="mathrm{akshayd@mit.edu}" style="vertical-align: -4px" />), <a href="index.html">Pritish Kamath</a> (<img class="eq" src="eqs/8145978181024508000-130.png" alt="mathrm{pritish@mit.edu}" style="vertical-align: -4px" />), <a href="http://www.mit.edu/~govind/">Govind Ramnarayan</a> (<img class="eq" src="eqs/8007377117028638485-130.png" alt="mathrm{govind@mit.edu}" style="vertical-align: -4px" />)<br /></p>
+<p>The Algorithms &amp; Complexity Seminar for the 2017-18 year will usually (unless otherwise stated) meet on <b>Wednesdays 4pm-5pm</b> in <b>32-G575</b> (Theory Lab on the 5th floor of the Stata Center). The style and format of these meetings are variable. Please feel free to contact the organizers to find out more details. To receive announcements of upcoming talks, subscribe to the mailing list by either visiting the <tt><a href="https://lists.csail.mit.edu/mailman/listinfo/compalgsem">mailman page</a></tt> or send an empty email to <tt>compalgsem-subscribe@lists.csail.mit.edu</tt>.</p>
+<h2>Past Talks</h2>
+<ul>
+<li>
+<b>Wednesday, September 6, 2017</b>: <b><a href="https://eccc.weizmann.ac.il/author/1053/">Dor Minzer</a></b> (Tel Aviv University).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">An approach for 2-to-1 Games Conjecture via expansion on the Grassmann Graph</a>
+<div class="abs">
+<b>Abstract.</b> The PCP theorem characterizes the computational class NP, so as to allow proving approximation problems are NP-hard.<br/><br/>
+
+One of the fundamental open questions in PCP theory is whether a special type of PCP, namely 2-to-1 Games, is still NP-hard. This conjecture is a variant of Khot's well-known Unique Games conjecture.<br/><br/>
+
+A recent line of study suggests a new attack on the 2-to-1 games conjecture (albeit with imperfect completeness). This approach is based on a mathematical object called the Grassmann Graph, and relies on an unproven combinatorial hypothesis on it. This, in turn, leads to the study of edge expansion in this graph. More specifically, to the study of sets of vertices in the Grassmann Graph, whose edge expansion is not optimal.<br/><br/>
+
+It turns out that the study of the combinatiral hypothesis is in fact equivalent to the study of edge expansion (Barak Kothari). Thus extending these results would complete the approach, proving that distinguishing between 2-to-1 games with close to 1 value, and 2-to-1 games with arbitrarily small value, is NP-hard.<br/><br/>
+
+This talk discusses this line of study.<br/><br/>
+
+Based on joint works with Irit Dinur, Subhash Khot, Guy Kindler and Muli Safra.
+</div>
+</li>
+
+<li>
+<b>Wednesday, September 27, 2017</b>: <b><a href="http://www.caam.rice.edu/~hand/">Paul Hand</a></b> (Rice U.). <font color="red">[Room: 32-D463 (Star)]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Deep Compressed Sensing</a>
+<div class="abs">
+<b>Abstract.</b> Combining principles of compressed sensing with deep neural network-based generative image priors has recently been empirically shown to require 10X fewer measurements than traditional compressed sensing in certain scenarios. As deep generative priors (such as those obtained via generative adversarial training) improve, analogous improvements in the performance of compressed sensing and other inverse problems may be realized across the imaging sciences.<br/><br/>
+
+In joint work with Vladislav Voroninski, we provide a theoretical framework for studying inverse problems subject to deep generative priors. In particular, we prove that with high probability, the non-convex empirical risk objective for enforcing random deep generative priors subject to compressive random linear observations of the last layer of the generator has no spurious local minima, and that for a fixed network depth, these guarantees hold at order-optimal sample complexity.
+</div>
+</li>
+
+<li>
+<b>Thursday, September 28, 2017</b>: <b><a href="https://yuvaldagan.wordpress.com/">Yuval Dagan</a></b> (Technion). <font color="red">[Time: 3-4pm]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Trading information complexity for error</a>
+<div class="abs">
+<b>Abstract.</b>  We consider the standard two-party communication model. The central problem studied in this article is how much one can save in information complexity by allowing an error. Our major result is that the $\varepsilon$-error randomized communication complexity of set disjointness is $n[C_{\mathrm{DISJ}} - \Theta(h(\varepsilon))] + o(n)$, where $C_{\mathrm{DISJ}} \approx 0.4827$ is the constant of set disjointness found by Braverman et al.<br/><br/>
+
+Joint work with Yuval Filmus, Hamed Hatami and Yaqiao Li.
+</div>
+</li>
+
+<li>
+<b>Wednesday, October 11, 2017</b>: <b><a href="https://sites.google.com/site/wjmzbmr/">Lijie Chen</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">On The Power of Statistical Zero Knowledge</a>
+<div class="abs">
+<b>Abstract.</b> We examine the power of statistical zero knowledge proofs (captured by the complexity class $\mathsf{SZK}$) and their variants. First, we give the strongest known relativized evidence that $\mathsf{SZK}$ contains hard problems, by exhibiting an oracle relative to which $\mathsf{SZK}$ (indeed, even $\mathsf{NISZK}$) is not contained in the class $\mathsf{UPP}$, containing those problems solvable by randomized algorithms with unbounded error. This answers an open question of Watrous from 2002 [Aar]. Second, we "lift" this oracle separation to the setting of communication complexity, thereby answering a question of Goos et al. (ICALP 2016). Third, we give relativized evidence that perfect zero knowledge proofs (captured by the class $\mathsf{PZK}$) are weaker than general zero knowledge proofs. Specifically, we exhibit oracles relative to which $\mathsf{SZK}$ does not belong to $\mathsf{PZK}$, $\mathsf{NISZK}$ does not belong to $\mathsf{NIPZK}$, and $\mathsf{PZK}$ is not equal to $\mathsf{coPZK}$. The first of these results answers a question raised in 1991 by Aiello and Hastad (Information and Computation), and the second answers a question of Lovett and Zhang (2016). We also describe additional applications of these results outside of structural complexity.<br/><br/>
+
+The technical core of our results is a stronger hardness amplification theorem for approximate degree, which roughly says that composing the gapped-majority function with any function of high approximate degree yields a function with high threshold degree.<br/><br/>
+
+Joint work with Adam Bouland, Dhiraj Holden, Justin Thaler, and Prashant Nalini Vasudevan.
+</div>
+</li>
+
+
+<li>
+<b>Wednesday, October 25, 2017</b>: <b><a href="http://www.mit.edu/~pritish">Pritish Kamath</a></b> (MIT). <font color="red">[Time: 4.30-5.30pm]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Non-Interactive Agreement & Dimension Reduction for Polynomials</a>
+<div class="abs">
+<b>Abstract.</b> The "Non-interactive Agreement Distillation" problem, specified by a joint distribution $P(x,y)$ and a target alphabet size $k$, is defined as follows: Two players, Alice and Bob, observe sequences $(X_1, ... , X_n)$ and $(Y_1, ... , Y_n)$ respectively where $\{(X_i, Y_i)\}$ are drawn i.i.d. from $P(x,y)$. Both players look at their share of randomness, and output an element of $[k]$. Their goal is to maximize the probability that their outputs are the same, while ensuring that their outputs are marginally uniform.<br/><br/>
+
+Given $P(x,y)$ and $k$, what is the largest correlation (or agreement probability) that the players can achieve? In the special case where $P(x,y)$ is the distribution of $\rho$-correlated Gaussians, the largest achievable correlation is also known as the "Optimal Noise-Stability of a $k$-partition" and has received wide interest in Computer Science. More generally, it is also related to the notions of common information studied in Information Theory.<br/><br/>
+
+It turns out that this value is not well understood, even in the special case of correlated Gaussians! Moreover, this value is a priori not even "computable", as there is no immediate upper bound on the number of samples the players need to draw in order to achieve the best possible correlation!<br/><br/>
+
+In this work, we obtain explicit (computable) bounds on the number of samples needed to get $\varepsilon$-close to the maximum achievable correlation (or even for the more general problem of "non-interactive simulation"). This implies computability of the maximum achievable correlation. [Our bounds significantly improve upon the results obtained recently by De, Mossel & Neeman, using fundamentally different techniques.]<br/><br/>
+
+At the heart of our result is a new technique that we call "Dimension Reduction for Polynomials". It is analogous to the Johnson-Lindenstrauss lemma, which is a dimension reduction for vectors. This technique is mostly elementary, and we believe it to be of independent interest.<br/><br/>
+
+This talk will discuss the motivational aspects of the problem, its moral and technical connections to other problems in computer science and will mainly focus on the new technique of "dimension reduction for polynomials".<br/><br/>
+
+Based on joint works with Badih Ghazi, Prasad Raghavendra and Madhu Sudan [<a href="https://eccc.weizmann.ac.il/report/2016/104/">ECCC TR16-104</a>, <a href="https://eccc.weizmann.ac.il/report/2017/125/">ECCC TR17-125</a>].
+</div>
+</li>
+
+<li>
+<b>Wednesday, November 1, 2017</b>: <b><a href="http://www.cs.princeton.edu/~risteski/">Andrej Risteski</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Beyond Log-concavity: Provable Guarantees for Sampling Multi-modal Distributions using Simulated Tempering Langevin Monte Carlo</a>
+<div class="abs">
+<b>Abstract.</b> A key task in Bayesian statistics is sampling from distributions that are only specified up to a partition function (i.e., constant of proportionality). However, without any assumptions, sampling (even approximately) can be $\#\mathsf{P}$-hard, and few works have provided "beyond worst-case" guarantees for such settings.<br/><br/>
+
+For log-concave distributions, classical results going back to Bakry and Emery (1985) show that natural continuous-time Markov chains called Langevin diffusions mix in polynomial time. The most salient feature of log-concavity violated in practice is uni-modality: commonly, the distributions we wish to sample from are multi-modal. In the presence of multiple deep and well-separated modes, Langevin diffusion suffers from torpid mixing.<br/><br/>
+
+We address this problem by combining Langevin diffusion with simulated tempering. The result is a Markov chain that mixes more rapidly by transitioning between different temperatures of the distribution. We analyze this Markov chain for the canonical multi-modal distribution: a mixture of gaussians (of equal variance). The algorithm based on our Markov chain provably samples from distributions that are close to mixtures of gaussians, given access to the gradient of the log-pdf. For the analysis, we use a spectral decomposition theorem for graphs (Gharan and Trevisan, 2014) and a Markov chain decomposition technique (Madras and Randall, 2002).<br/><br/>
+
+Joint work with Rong Ge and Holden Lee.
+</div>
+</li>
+
+<li>
+<b>Thursday, November 2, 2017</b>: <b><a href="http://www.cs.columbia.edu/~liyang/">Li-Yang Tan</a></b> (TTI Chicago). <font color="red">[Room: 32-G882]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Fooling intersections of low-weight halfspaces</a>
+<div class="abs">
+<b>Abstract.</b> A weight-$t$ halfspace is a Boolean function $f(x)=\mathrm{sign}(w_1 x_1 + \cdots + w_n x_n - \theta)$ where each $w_i$ is an integer in $\{-t,\dots,t\}$. We give an explicit pseudorandom generator that $\delta$-fools any intersection of $k$ weight-$t$ halfspaces with seed length $\mathrm{poly}(\log n, \log k,t,1/\delta)$. In particular, our result gives an explicit PRG that fools any intersection of any $\mathrm{quasipoly}(n)$ number of halfspaces of any $\mathrm{polylog}(n)$ weight to any $1/\mathrm{polylog}(n)$ accuracy using seed length $\mathrm{polylog}(n)$. Prior to this work no explicit PRG with non-trivial seed length was known even for fooling intersections of $n$ weight-$1$ halfspaces to constant accuracy.<br/><br/>
+
+The analysis of our PRG fuses techniques from two different lines of work on unconditional pseudorandomness for different kinds of Boolean functions. We extend the approach of Harsha, Klivans, and Meka for fooling intersections of regular halfspaces, and combine this approach with results of Bazzi and Razborov on bounded independence fooling CNF formulas. Our analysis introduces new coupling-based ingredients into the standard Lindeberg method for establishing quantitative central limit theorems and associated pseudorandomness results.<br/><br/>
+
+Joint work with Rocco Servedio.
+</div>
+</li>
+
+<li>
+<b>Thursday, November 16, 2017</b>: <b><a href="web.stanford.edu/~jiantao/">Jiantao Jiao</a></b> (Stanford).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Instance-optimal learning of the total variation distance</a>
+<div class="abs">
+<b>Abstract.</b> The total variation distance (statistical distance) plays fundamental roles in statistics, machine learning, and theoretical computer science. We consider the problem of learning the total variation distance between $p$ and $q$ for any fixed $q$ given independent identically distributed samples from $p$. We characterize the optimal sample complexity in terms of $q$ and $\varepsilon$, and construct a near-linear time algorithm that achieves the optimal sample complexity for each $q$. In other words, the learner we constructed is instance optimal, paralleling the work of [VV'14] on instance optimal identity testing. The dependence on $q$ in learning the total variation distance is drastically different from that in testing identity. We show that for any fixed $q$, the performance of the optimal learner with $n$ samples is essentially that of the plug-in approach with $n \log n$ samples, where the plug-in approach evaluates the total variation distance between the empirical distribution of $p$ and the known distribution $q$.<br/><br/>
+
+The key methodology behind our achievability and lower bound constructions is the idea of local approximation, which bridges approximation theory and concentration inequalities. In particular, the upper and lower bounds are dual to each other, and proofs of upper bounds can be translated into proofs of lower bounds.<br/><br/>
+
+We generalize the local approximation approach to learning the total variation distance when both $p$ and $q$ are unknown. We obtain tight upper and lower bounds of the optimal sample complexity including the dependence on $\epsilon$, where we show it is necessary to utilize multivariate polynomial approximation: any univariate polynomial approximation scheme fails to achieves the optimal sample complexity. We show that the sample complexity for the both $p,q$ unknown case is essentially the same as the $q$ known case with $q$ being uniform, showing that $q$ being uniform is the most difficult case.<br/><br/>
+
+If time permits, we discuss the potential applications of the general local approximation methodology, which has proved to produce the optimal learners in a variety of settings such as learning the entropy, power sum functional, KL divergence, Hellinger divergence, $\chi^2$ divergence, support size, etc.<br/><br/>
+
+Based on joint work with Yanjun Han and Tsachy Weissman. [<a href="https://arxiv.org/abs/1705.00807">arXiv:1705.00807</a>]
+</div>
+</li>
+
+<li>
+<b>Wednesday, November 29, 2017</b>: <b><a href="acseminar.html">Slobodan Mitrovic</a></b> (EPFL).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Matchings in MPC frameworks</a>
+<div class="abs">
+<b>Abstract.</b> The last decade has witnessed the success of a number of <i>massive parallel computation</i> (MPC) frameworks, such as MapReduce, Hadoop, Dryad, or Spark. These frameworks allow for much more local computation, compared to the classical PRAM models. In this context, we investigate the complexity of one of the most fundamental graph problems: <i>Maximum Matching</i>. We show that if the memory per machine is $\Omega(n)$ (or even only $n/(\log n)^{O(\log \log n)}$), then for any fixed constant $\varepsilon > 0$, one can compute a $(2+\varepsilon)$-approximation to Maximum Matching in $O\left((\log \log n)^2\right)$ MPC rounds. This constitutes an exponential improvement over previous work -- both the one designed specifically for MPC and the one obtained via connections to PRAM or distributed algorithms -- which required $\Theta(\log n)$ rounds to achieve similar approximation guarantees.<br/><br/>
+
+To establish our result we need to deviate from the previous work in two important ways. Firstly, we use <i>vertex--based</i> graph partitioning, instead of the edge--based approaches that were utilized so far. Secondly, we develop a technique of <i>round compression</i>. This technique enables one to take a (distributed) algorithm that computes an $O(1)$-approximation of maximum matching in $O(\log n)$ <i>independent</i> PRAM phases and implement a super-constant many of these phases in only a constant number of actual MPC rounds. These techniques turn out to be what one needs to truly take advantage of the MPC model, as compared to the PRAM model, even in the regime of (sub-)linear memory per machine.<br/><br/>
+
+Based on joint work with Artur Czumaj, Jakub Łącki, Aleksander Mądry, Krzysztof Onak and Piotr Sankowski. [<a href="https://arxiv.org/abs/1707.03478">arXiv:1707.03478</a>]
+</div>
+</li>
+
+<li>
+<b>Thursday, November 30, 2017</b>: <b><a href="http://www.mit.edu/~jerryzli/">Jerry Li</a></b> (MIT). <font color="red">[Room: 32-G449 (Kiva/Patil)]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Mixture Models, Robustness, and Sum of Squares Proofs</a>
+<div class="abs">
+<b>Abstract.</b> We use the Sum of Squares (SoS) method to develop a new efficient algorithm for clustering and mean estimation in well-separated high-dimensional mixture models, substantially improving upon the statistical guarantees achieved by previous efficient algorithms. In particular, we study mixtures of $k$ distributions, where every pair of distributions has means separated by separated by at least $k^\varepsilon$ for any $\varepsilon > 0$. In the special case of spherical Gaussian mixtures, we give a $k^{O(1/\varepsilon^2)}$-time algorithm that learns the means of the components in the mixture and accurately clusters samples from the mixture. This is the first algorithm to improve on greedy ("single-linkage") and spectral clustering, breaking a long-standing barrier for efficient algorithms at separation $k^{1/4}$.<br/><br/>
+
+Our techniques are based on adapting algorithmic ideas from robust statistics, and are potentially of independent interest. Our main algorithm for learning mixture models provides an entirely SoS interpretation of the convex programming framework of [Diakonikolas et al, FOCS 16]. We show that many of the proofs from that paper can be replaced with much simpler proofs using only basic concentration and Holder's inequality, which allows us to approach this problem via SoS. As a corollary of this, we also obtain improved rates for robust mean estimation in certain regimes.<br/><br/>
+
+Joint work with Sam Hopkins (Cornell).
+</div>
+</li>
+
+<li>
+<b>Wednesday, January 17, 2018</b>: <b><a href="acseminar.html">Keerti Choudhary</a></b> (Weizmann).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Fault Tolerant Data Structures</a>
+<div class="abs">
+<b>Abstract.</b> In this talk, we look at the problem of single-source-reachability (SSR) in presence of failures of vertices and edges. In the static setting, it can be solved in $O(|V|+|E|)$ time, for any directed graph $G = (V, E)$. To model the scenario of a faulty network, we associate a parameter $k$ with the network such that there are at most $k$ vertices (or edges) that are failed at any stage. The goal is to preprocess the graph $G$ and compute a compact data structure, that, given any set $F$ of at most $k$ vertices (or edges), efficiently solves the SSR problem for the graph $G \setminus F$.  We show that for any set $F$ of size $k$, solves SSR problem for $G \setminus F$ in $O(2^k n)$ time. Previously the only known construction was single fault. One major application of this structure is a fault tolerant algorithm for SSC (strongly connected components).
+</div>
+</li>
+
+<li>
+<b>Wednesday, March 21, 2018</b>: <b><a href="https://yuvaldagan.wordpress.com/">Yuval Dagan</a></b> (Technion).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Detecting Correlations with Little Memory and Communication</a>
+<div class="abs">
+<b>Abstract.</b> We study the problem of identifying correlations in multivariate data, under information constraints: Either on the amount of memory that can be used by the algorithm, or the amount of communication when the data is distributed across several machines. We prove a tight trade-off between the memory/communication complexity and the sample complexity, implying (for example) that to detect pairwise correlations with optimal sample complexity, the number of required memory/communication bits is at least quadratic in the dimension. Our results substantially improve those of Shamir (2014), which studied a similar question in a much more restricted setting. To the best of our knowledge, these are the first provable sample/memory/communication trade-offs for a practical estimation problem, using standard distributions, and in the natural regime where the memory/communication budget is larger than the size of a single data point. To derive our theorems, we prove a new information-theoretic result, which may be relevant for studying other information-constrained learning problems.<br/><br/>
+
+Based on joint work with Ohad Shamir.
+</div>
+</li>
+
+<li>
+<b>Wednesday, April 25, 2018</b>: <b><a href="https://sites.google.com/site/msabin27/">Manuel Sabin</a></b> (UC Berkeley).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Fine-Grained Derandomization: From Problem-Centric to Resource-Centric Complexity</a>
+<div class="abs">
+<b>Abstract.</b> We show that popular hardness conjectures about problems from the field of fine-grained complexity theory imply structural results for resource-based complexity classes. Namely, we show that if either $k$-Orthogonal-Vectors requires $n^{k - o(1)}$ time or $k$-CLIQUE requires $n^{\omega k/3 - o(1)}$ time (for $\omega$ the matrix multiplication constant) to count on randomized machines for all but finitely many input lengths, then the following hold:<br/><br/>
+
+<ul>
+<li>$\mathsf{BPP}$ can be decided in polynomial time using only $n^{\alpha}$ random bits on average over any efficient input distribution, for any constant $\alpha > 0$</li>
+<li>$\mathsf{BPP}$ can be decided in polynomial time with no randomness on average over the uniform distribution</li>
+<li>$\mathsf{DTIME}[t(n)]$ is not contained in $\mathsf{BPP}$, for time-constructible $t(n)=n^{\omega(1)}$</li>
+</ul>
+
+These derandomizations improve over previous ones achieved from worst-case uniform assumptions by succeeding on all but finitely many input lengths, as is wanted in asymptotics. Previously, derandomizations from worst-case uniform assumptions were only know to succeed on infinitely many input lengths. It is specifically the structure and moderate hardness of the $k$-Orthogonal-Vectors and $k$-CLIQUE problems that makes removing this restriction possible.<br/><br/>
+
+Via this uniform derandomization, we connect the problem-centric and resource-centric views of complexity theory by showing that exact hardness assumptions made about specific problems like $k$-CLIQUE imply structural results like $\mathsf{EXP} \ne \mathsf{BPP}$. Viewed pessimistically, this result poses a barrier to proving some of the main assumptions of fine-grained complexity, lest we also attain major breakthroughs in classical complexity theory. Alternately, we can hope to make progress on problems like $\mathsf{EXP}$ vs $\mathsf{BPP}$ by working on very concrete conjectures about specific problems.<br/><br/>
+
+Joint work with Marco Carmosino and Russell Impagliazzo.
+</div>
+</li>
+
+<li>
+<b>Wednesday, May 9, 2018</b>: <b><a href="http://people.csail.mit.edu/sitanc/">Sitan Chen</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Learning Mixtures of Product Distributions via Higher Multilinear Moments</a>
+<div class="abs">
+<b>Abstract.</b> Learning mixtures of $k$ binary product distributions is a central problem in computational learning theory, but one where there are wide gaps between the best known algorithms and lower bounds (even for restricted families of algorithms). We narrow many of these gaps by developing novel insights about how to reason about higher order multilinear moments. Our results include:<br/><br/>
+<ol>
+<li> an $n^{O(k^2)}$ time algorithm for learning mixtures of binary product distributions, giving the first improvement on the $n^{O(k^3)}$ time algorithm of Feldman, O'Donnell and Servedio (FOCS '05),</li>
+<li> an $n^{\Omega(\sqrt{k})}$ statistical query lower bound, improving on the quasipolynomial lower bound that is based on connections to sparse parity with noise, and</li>
+<li> a quasipolynomial time algorithm for learning mixtures of $k$ subcubes. This special case can still simulate many other hard learning problems, but is much richer than any of them alone. As a corollary, we obtain more flexible algorithms for learning decision trees under the uniform distribution, that work with stochastic transitions, when we are only given positive examples and with a polylogarithmic number of samples for any fixed $k$.</li>
+</ol>
+
+Joint work with Ankur Moitra.
+</div>
+</li>
+
+<li>
+<b>Wednesday, May 16, 2018</b>: <b><a href="acseminar.html">Lisa Yang</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Parallel Repetition of Non-Signaling Games: Counterexamples and a Dichotomy</a>
+<div class="abs">
+<b>Abstract.</b> Non-signaling games are an important object of study in the theory of computation, both for their role in quantum information and for (classical) cryptography. In this work, we study the behavior of these games under parallel repetition.<br/><br/>
+
+We show that, unlike the situation both for $k$-player classical games (for $k \ge 3$) and for $2$-player non-signaling games, there are $k$-player non-signaling games whose values do not tend to $0$ with sufficient parallel repetition.<br/><br/>
+
+We show that in general:<br/>
+<ul>
+<li>Every game's non-signaling value under parallel repetition either is lower bounded by a positive constant or decreases exponentially with the number of repetitions.</li>
+<li>Exponential decrease occurs if and only if the game's "sub-non-signaling value" (Lancien and Winter, CJTCS '16) is less than $1$.</li>
+</ul>
+
+We also analyze a specific $3k$-player game (for every $k \ge 1$), and show that its non-signaling value remains exactly $(2/3)^k$ under any number of parallel repetitions.<br/><br/>
+
+Joint work with Justin Holmgren.
+</div>
+</li>
+
+<li>
+<b>Thursday, May 17, 2018</b>: <b><a href="http://www.cs.cmu.edu/~venkatg/">Venkat Guruswami</a></b> (CMU). <font color="red">[Time: 4.30-5.30pm]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Improved bounds for perfect hashing</a>
+<div class="abs">
+<b>Abstract.</b> A code $C$ over alphabet $\{1, 2, \ldots, k\}$ of length $n$ is said to be a $k$-hash code if every $k$ distinct elements of $C$ have a coordinate where they all differ. Understanding the largest possible rate (in bits), defined as $(\log_2 |C|)/n$, of a $k$-hash code is a classical problem. It arises in two equivalent contexts: (i)  the smallest size possible for a perfect hash family that maps a universe of prescribed size into $\{1, 2, \ldots, k\}$, and (ii) the zero-error capacity for decoding with lists of size less than $k$ for a certain combinatorial channel.<br/><br/>
+
+A general upper bound of $k!/k^{k-1}$ on the rate of a $k$-hash code (in the limit of large $n$) was obtained by Fredman and Komlos in 1984 for any $k \ge 4$. Arikan (1994) improved the bound for $k=4$ (from $0.375$) to $0.3512$. For $k > 4$, however, the original Fredman-Komlos bound has remained the best known.<br/><br/>
+
+In this talk, I'll describe two recent works making progress on these bounds. The first (joint with Marco Dalai and Jaikumar Radhakrishnan) improves the rate upper bound to $6/19 < 0.3158$ for $k=4$. The second (with Andrii Riazanov) gives the first improvement over the Fredman-Komlos bound for every $k \ge 5$.<br/><br/>
+
+Our approach is based on a careful combination of the Plotkin-type bounds in coding theory and Hansel's lemma for covering the complete graph by bipartite graphs.
+</div>
+</li>
+
+<li>
+<b>Thursday, May 24, 2018</b>: <b><a href="https://sites.google.com/site/wjmzbmr/home">Lijie Chen</a></b> (MIT).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">On The Hardness of Approximate and Exact (Bichromatic) Maximum Inner Product</a>
+<div class="abs">
+<b>Abstract.</b> In this paper we study the (Bichromatic) Maximum Inner Product Problem (Max-IP), in which we are given sets $A$ and $B$ of vectors, and the goal is to find $a \in A$ and $b \in B$ maximizing inner product between $a$ and $b$. Max-IP is very basic and serves as the base problem in the recent breakthrough of [Abboud et al., FOCS 2017] on hardness of approximation for polynomial-time problems. It is also used (implicitly) in the argument for hardness of exact $\ell_2$-Furthest Pair (and other important problems in computational geometry) in poly-log-log dimensions in [Williams, SODA 2018]. We have three main results regarding this problem.<br/><br/>
+
+<ol>
+<li> Characterization of Multiplicative Approximation. First, we study the best multiplicative approximation ratio for Boolean Max-IP in sub-quadratic time. We show that, for Max-IP with two sets of $n$ vectors from $\{0,1\}^d$, there is an $n^{2 - \Omega(1)}$ time $(d/\log n)^{\Omega(1)}$-multiplicative-approximating algorithm, and we show this is conditionally optimal, as such a $(d/\log n)^{o(1)}$-approximating algorithm would refute SETH. Similar characterization is also achieved for additive approximation for Max-IP.</li>
+
+<li> $2^{O(\log^* n)}$-dimensional Hardness for Exact Max-IP Over The Integers. Last, we revisit the hardness of solving Max-IP exactly for vectors with integer entries. We show that, under SETH, for Max-IP with sets of $n$ vectors from $\mathbb{Z}^{d}$ for some $d = 2^{O(\log^* n)}$, every exact algorithm requires $n^{2 - o(1)}$ time. With the reduction from [Williams, SODA 2018], it follows that $\ell_2$-Furthest Pair and Bichromatic $\ell_2$-Closest Pair in $2^{O(\log^* n)}$ dimensions require $n^{2 - o(1)}$ time.</li>
+
+<li> Connection with $\mathsf{NP} \cdot \mathsf{UPP}$ Communication Protocols. Last, We establish a connection between conditional lower bounds for exact Max-IP with integer entries and $\mathsf{NP} \cdot \mathsf{UPP}$ communication protocols for Set-Disjointness, parallel to the connection between conditional lower bounds for approximating Max-IP and MA communication protocols for Set-Disjointness.</li>
+</ol>
+
+The lower bounds in our first and second results make use of a new MA protocol for Set-Disjointness introduced in [Rubinstein, 2017]. Our algorithms utilize the polynomial method and simple random sampling. Our third result follows from a new dimensionality self reduction from the Orthogonal Vectors problem for $n$ vectors from $\{0,1\}^d$ to $n$ vectors from $\mathbb{Z}^\ell$ using Chinese Remainder Theorem, where $\ell = 2^{O(\log^* d)}$, dramatically improving the previous reduction in [Williams, SODA 2018].<br/><br/>
+
+As a side product, we obtain an MA communication protocol for Set-Disjointness with complexity $O(\sqrt{n \log n \log\log n})$, slightly improving the $O(\sqrt{n} \log n)$ bound [Aaronson and Wigderson, TOCT 2009], and approaching the $\Omega(\sqrt{n})$ lower bound [Klauck, CCC 2003].<br/><br/>
+
+Moreover, we show that (under SETH) one can apply the $\sqrt{n}$ BQP communication protocol for Set-Disjointness to prove near-optimal hardness for approximation to Max-IP with vectors in $\{-1,1\}^d$. This answers a question from [Abboud et al., FOCS 2017] in the affirmative.
+</div>
+</li>
+
+<li>
+<b>Thursday, June 7, 2018</b>: <b><a href="http://drona.csa.iisc.ernet.in/~arnabb/">Arnab Bhattacharyya</a></b> (Indian Institute of Science) <font color="red">[This talk was cancelled.]</font><br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">Parameterized Intractability of Even Set</a>
+<div class="abs">
+<b>Abstract.</b> The $k$-Even Set problem is a parameterized variant of the Minimum Distance Problem for binary linear codes, which can be stated as follows: given a generator matrix $A$ and an integer $k$, determine whether the code generated by $A$ has distance at most $k$. Here, $k$ is the parameter of the problem. The question of whether $k$-Even Set is fixed parameter tractable (FPT) has been repeatedly raised in literature and has earned its place in Downey and Fellows' book (2013) as one of the "most infamous" open problems in the field of Parameterized Complexity.<br/><br/>
+
+In this talk, I will present our work showing that $k$-Even Set does not admit FPT algorithms under the (randomized) Gap Exponential Time Hypothesis (Gap-ETH). In fact, our result rules out not only exact FPT algorithms, but also any constant factor FPT approximation algorithms for the problem. Furthermore, our result holds even under the following weaker assumption, which is also known as the Parameterized Inapproximability Hypothesis (PIH): no (randomized) FPT algorithm can distinguish a satisfiable $2$-CSP instance from one which is only $0.99$-satisfiable (where the parameter is the number of variables).<br/><br/>
+
+In a subsequent work, Bonnet, Egri, Lin and Marx showed inapproximability of the parameterized Nearest Codeword problem, which together with our result, implies unconditional $W[1]$-hardness of Even Set. If there is time, I will also sketch this result.<br/><br/>
+
+Joint work with Karthik C.S., Suprovat Ghoshal and Pasin Manurangsi.
+</div>
+</li>
+
+<li>
+<b>Monday, July 30, 2018</b>: <b><a href="https://www.cse.wustl.edu/~bjuba/">Brendan Juba</a></b> (Washington U. at St. Louis).<br/>
+<b>Topic.</b> <a href="javascript:void(0)" onclick="showAbstract(this)" class="title">New algorithms for conditional linear regression</a>
+<div class="abs">
+<b>Abstract.</b> The kinds of rules that we know how to fit to data, such as linear rules, are rather limited. Hence we desire algorithms that can find rules that partially fit the data. We are particularly interested in cases where the predictor is only valid on a small subset of the data, less than $50\%$. Recent work on such tasks often cannot achieve meaningful guarantees for rich problems such as linear prediction or classification without using some extra structure. In the conditional linear regression task, we seek a $k$-DNF rule describing such a subset of the data distribution on which a low-error linear predictor exists, together with a description of this linear predictor function. I will discuss new algorithms for this problem, for the usual squared-error loss, that find a $k$-DNF that selects nearly the same fraction of the data as some optimal $k$-DNF. On the $k$-DNF we find, we can guarantee for example that there is a linear rule achieving an $\widetilde{O}(r \log \log n)$ approximation to the loss of the optimal linear rule on an optimal $r$-term $k$-DNF on $n$ attributes, given that the covariance of the distribution on the individual terms does not vary too much.<br/><br/>
+
+This talk is based on joint works with Calderon, Li, Li, and Ruan; and with Hainline, Le, and Woodruff.
+</div>
+</li>
+
+
+</ul>
+<h2>Theory Calendar</h2>
+<p>Add this calendar to yours to receive details about upcoming events in the Theory group<br />
+(includes <a href="acseminar.html">A&amp;C Seminars</a>, <a href="http://toc.csail.mit.edu/node/424">TOC Colloquium</a>, <a href="http://toc.csail.mit.edu/node/428">CIS Seminars</a>, <a href="https://sites.google.com/site/theorylunch2016/home">Theory Lunch</a>, TOC tea and more!) :</p>
+<p><iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r9nl2sjnqb0nccl0mllim32p2s%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="600" height="250" frameborder="0" scrolling="no"></iframe><br />
+Click on the events above to get more description about the same (title/abstract for talks, etc.)</p>
+<h2>Earlier Editions of A&amp;C Seminar</h2>
+<ul>
+<li><p><a href="http://people.csail.mit.edu/madhu/algcomp/ST06/algcompsem-ST06.html">Spring 2006</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madhu/algcomp/FT06/algcompsem-FT06.html">Fall 2006</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madhu/algcompsem.html">Spring 2007</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/nickh/algcompsem.html">Fall 2007</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/ningxie/algcompsem.html">Spring 2008</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Fall2008/">Fall 2008</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Spring2009/">Spring 2009</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Fall2009/">Fall 2009</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Spring2010/">Spring 2010</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Fall2010/">Fall 2010</a></p>
+</li>
+<li><p><a href="http://people.csail.mit.edu/madry/algcompsem/Spring2011/">Spring 2011</a></p>
+</li>
+<li><p><a href="http://www.mit.edu/~ecprice/algcompsem/1112/">Fall 2011, Spring 2012</a></p>
+</li>
+<li><p><a href="http://www.mit.edu/~ecprice/algcompsem/">Fall 2012, Spring 2013</a></p>
+</li>
+<li><p><a href="http://ilyaraz.org/acseminar/index1314.html">Fall 2013, Spring 2014</a></p>
+</li>
+<li><p><a href="http://ilyaraz.org/acseminar/index1415.html">Fall 2014, Spring 2015</a></p>
+</li>
+<li><p><a href="http://ilyaraz.org/acseminar/">Fall 2015, Spring 2016</a></p>
+</li>
+<li><p><a href="http://www.mit.edu/~pritish/acseminar_2016-17.html">Fall 2016, Spring 2017</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2018-09-02 06:47:33 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function total() {
+	var hands = ["roy_flush", "str_flush", "4of", "full_house", "flush", "str", "3of", "2p", "1p", "high"];
+	rounds = 0;
+	json_obj = "{ ";
+	for (i = 0; i < hands.length; i++) {
+		rounds += parseInt(document.getElementById(hands[i]).value);
+		json_obj += "\"" + hands[i] + "\" : " + document.getElementById(hands[i]).value;
+		if (i < hands.length - 1) {
+			json_obj += ", "
+		}
+    }
+	document.getElementById('total').innerHTML = rounds;
+	json_obj += " }"
+    document.getElementById('json').innerHTML = json_obj;
+}
+
+function add(id) {
+    document.getElementById(id).value = parseInt(document.getElementById(id).value) + 1;
+    total();
+}
+
+function subtract(id) {
+    document.getElementById(id).value = parseInt(document.getElementById(id).value) - 1;
+    total();
+}
+</script>
+</head>
+<body>
+<h1>Poker hand counter</h1>
+We are in the age of BIG DATA! The idea is to collect as much data as possible, and later try to see what one can do with the data.</br>
+The following is a simple tool to collect data about the frequency of poker hands.</br></br>
+
+ <table border="1">
+  <col width="130">
+  <col width="30">
+  <col width="50">
+  <col width="30">
+  <tr>
+    <td>Royal Flush</td>
+    <td align="center"><button type="button" onclick="add('roy_flush')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="roy_flush"></td>
+    <td align="center"><button type="button" onclick="subtract('roy_flush')">-</button></td>
+  </tr>
+  <tr>
+    <td>Straight Flush</td>
+    <td align="center"><button type="button" onclick="add('str_flush')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="str_flush"></td>
+    <td align="center"><button type="button" onclick="subtract('str_flush')">-</button></td>
+  </tr>
+  <tr>
+    <td>4 of a kind</td>
+    <td align="center"><button type="button" onclick="add('4of')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="4of"></td>
+    <td align="center"><button type="button" onclick="subtract('4of')">-</button></td>
+  </tr>
+  <tr>
+    <td>Full House</td>
+    <td align="center"><button type="button" onclick="add('full_house')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="full_house"></td>
+    <td align="center"><button type="button" onclick="subtract('full_house')">-</button></td>
+  </tr>
+  <tr>
+    <td>Flush</td>
+    <td align="center"><button type="button" onclick="add('flush')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="flush"></td>
+    <td align="center"><button type="button" onclick="subtract('flush')">-</button></td>
+  </tr>
+  <tr>
+    <td>Straight</td>
+    <td align="center"><button type="button" onclick="add('str')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="str"></td>
+    <td align="center"><button type="button" onclick="subtract('str')">-</button></td>
+  </tr>
+  <tr>
+    <td>3 of a kind</td>
+    <td align="center"><button type="button" onclick="add('3of')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="3of"></td>
+    <td align="center"><button type="button" onclick="subtract('3of')">-</button></td>
+  </tr>
+  <tr>
+    <td>2 pairs</td>
+    <td align="center"><button type="button" onclick="add('2p')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="2p"></td>
+    <td align="center"><button type="button" onclick="subtract('2p')">-</button></td>
+  </tr>
+  <tr>
+    <td>1 pair</td>
+    <td align="center"><button type="button" onclick="add('1p')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="1p"></td>
+    <td align="center"><button type="button" onclick="subtract('1p')">-</button></td>
+  </tr>
+  <tr>
+    <td>High Card</td>
+    <td align="center"><button type="button" onclick="add('high')">+</button></td>
+    <td align="center"><input type="text" name="fname" value="0" size="1" id="high"></td>
+    <td align="center"><button type="button" onclick="subtract('high')">-</button></td>
+  </tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td></td>
+    <td align="center"><a id="total">0</a></td>
+    <td></td>
+  </tr>
+</table>
+
+</br>
+
+I will soon add the feature where you can submit your data to a global counter. Until then, you can keep this JSON object for records:</br>
+<p id="json">
+</p>
+<script>
+total()
+</script>
+
+</body>
+</html>
+

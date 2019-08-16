@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Silly Symmetric-key encryption!</h1><br/>
+
+Key : <input type="text" id="key" size="30"></br></br>
+
+<table border="0">
+<tr>
+<td align="left">Plain Text :</td> <td align="left"> Encrypted Text : </td>
+</tr>
+<tr>
+<td><textarea rows="5" cols="60" id="plain"></textarea></td><td><textarea rows="5" cols="60" id="crypt"></textarea></td>
+</tr>
+<tr>
+<td align="right"><button type="button" onclick="encrypt()">Encrypt</button></td>
+<td align="right"><button type="button" onclick="decrypt()">Decrypt</button></td>
+</tr>
+</table><br/><br/>
+
+
+<script>
+LOWER = 32;
+UPPER = 127;
+GAP = UPPER - LOWER;
+
+function add_char(a, b)
+{
+   if (a == '\n') return '\n';
+   va = a.charCodeAt(0);
+   vb = b.charCodeAt(0) + 1;
+   return String.fromCharCode(LOWER + ((va + vb - 2*LOWER) % GAP));
+}
+
+function subtract_char(a, b)
+{
+   if (a == '\n') return '\n';
+   va = a.charCodeAt(0);
+   vb = b.charCodeAt(0) + 1;
+   return String.fromCharCode(LOWER + ((va - vb + GAP) % GAP));
+}
+
+function encrypt()
+{
+
+   plain_text = document.getElementById("plain").value;
+   key_text = document.getElementById("key").value;
+   crypt_text = "";
+
+   key_len = key_text.length;
+
+   for (var i=0; i<plain_text.length; i++)
+   {
+      crypt_text += add_char(plain_text[i], key_text[i % key_len]);
+   }
+   document.getElementById("crypt").value = crypt_text;
+}
+
+function decrypt()
+{
+   crypt_text = document.getElementById("crypt").value;
+   key_text = document.getElementById("key").value;
+   plain_text = "";
+
+   key_len = key_text.length;
+
+   for (var i=0; i<crypt_text.length; i++)
+   {
+      plain_text += subtract_char(crypt_text[i], key_text[i % key_len]);
+   }
+   document.getElementById("plain").value = plain_text;
+}
+</script>
+
+</body>
+</html>

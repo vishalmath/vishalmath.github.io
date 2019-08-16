@@ -1,0 +1,75 @@
+# jemdoc: menu{MENU}{index.html}
+= Great Ideas in Theoretical Computer Science --- Theory Lunch Edition!
+
+*Organizers:* [http://www.mit.edu/~pritish Pritish Kamath] ($\mathrm{pritish@mit.edu}$), [http://www.mit.edu/~jerryzli Jerry Li] ($\mathrm{jerryzli@mit.edu}$)\n
+
+*This page is only for historical purposes. For the current Theory Lunch website, please go [https://sites.google.com/site/csailtheorylunch/ here]*.
+
+If you are not on the mailing list, sign up [https://lists.csail.mit.edu/mailman/listinfo/gitcs here]!\n
+*Where:* G5 Lounge (Stata Center)\n
+*When:* Tuesdays at 12:45 PM (mostly so, but subject to change)
+
+Theoretical Computer Science is full of great ideas, so once a week, the MIT Theory group gets together to socialize and share some knowledge. We'll briefly share some interesting ideas, and discuss a superset of these ideas over lunch.\n
+
+Add this calendar to yours to receive details about upcoming events in the Theory group\n
+(includes [http://www.ilyaraz.org/acseminar/ A&C Seminars], [http://toc.csail.mit.edu/node/424 TOC Colloquium], [http://toc.csail.mit.edu/node/428 CIS Seminars], Theory Lunch, TOC tea and more!) :
+{{<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r9nl2sjnqb0nccl0mllim32p2s%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="600" height="250" frameborder="0" scrolling="no"></iframe>}}\n
+Click on the events above to get more description about the same (title/abstract for talks, etc.)
+
+If you have any suggestions for future discussions, please contact $\mathrm{pritish@mit.edu}$ and/or $\mathrm{jerryzli@mit.edu}$.\n
+
+== Fall 2014
+- *October 8* : Agreement in partitioned dynamic networks - by [http://toc.csail.mit.edu/user/149 Adam Sealfon]
+- *September 30* : Unique Games Conjecture and Optimality of Semi-definite programming - by [https://math.mit.edu/people/profile.php?pid=1535 Alex Wein]
+- *September 23* : Beyond Berry-Esseen: Structure and Learning  Sums of Random Variables - by [http://www.gautamkamath.com Gautam Kamath]
+- *September 16* : Graph connectivity under random sampling - by [http://people.csail.mit.edu/ghaffari Mohsen Ghaffari]
+- *September 9* : Uniformity and bounded rank - by [http://ilyaraz.org/ Ilya Razenshteyn]
+- *September 3* : General organizational meeting and discussions (no talk)
+
+== Summer 2014
+- *August 27* : Stable instances of graph-partitioning problems - by Andreea Gane
+- *August 20* : Compressive Sensing with Structured Sparsity - by [http://people.csail.mit.edu/ludwigs/ Ludwig Schmidt]
+- *August 13* : Introduction to Compressed Sensing - by Jelena Markovic
+- *August 4* : Recent developments in Program Obfuscation - by [http://www.informatik.uni-trier.de/~ley/pers/hd/a/Ananth:Prabhanjan_Vijendra Prabhanjan Ananth]
+- *July 28* : Randomized Encodings - by [http://toc.csail.mit.edu/user/152 Prashant Vasudevan]
+- *July 23* : Alternating Minimization for Matrix Completion - by [http://toc.csail.mit.edu/user/153 Mădălina Persu]
+- *July 14* : Introduction to Sum-of-Squares hierarchy - by [http://www.mit.edu/~jerryzli Jerry Li]
+- *July 7* : Introduction to Differential Privacy - by [http://toc.csail.mit.edu/user/149 Adam Sealfon]
+- *June 30* : Set Cover in semi-streaming model - by [https://sites.google.com/site/vakilianali/ Ali Vakilian]
+- *June 23* : Dimensionality Reduction for k-means clustering - by [http://toc.csail.mit.edu/user/145 Christopher Musco]
+- *June 16* : Sparse recovery based sketching techniques and applications - by [http://toc.csail.mit.edu/user/144 Cameron Musco]
+- *June 9* : A Physically Universal Cellular Automaton - by [http://toc.csail.mit.edu/user/148 Luke Schaeffer]
+
+== Spring 2014
+- *May 26* : A computable nearly universal barrier function for polyhedral sets - by [http://math.mit.edu/people/profile.php?pid=1472 Yin-Tat Lee]
+- *May 19* : Better embeddings for planar Earth-Mover Distance over sparse sets - by [http://toc.csail.mit.edu/user/110 Arturs Backurs]
+- *May 12* : The "trial and error" model of computation - by [http://people.csail.mit.edu/adam/ Adam Bouland]
+- *May 7* : Gaussian Mixture Models and Duelling Distributions and Robust Statistics! Oh My! - by [http://www.gautamkamath.com/ Gautam Kamath]
+- *April 30* : Cryptographically Blinded Games: achieving coarse correlated equilibria by cheap talk - by [http://people.csail.mit.edu/sunoo Sunoo Park]
+- *April 23* : Tight bounds on entropy of /almost/ pair-wise independent random variables - by [http://toc.csail.mit.edu/user/88 Themistoklis Gouleakis]
+- *April 14* : Key-homomorphic pseudo-random functions - by [http://people.csail.mit.edu/sergeyg Sergey Gorbunov] 
+- *April 7* : Scheduling algorithms with applications to daily life - by [http://math.mit.edu/people/profile.php?pid=1403 Sam Elder]
+- *March 31* : Non-interactive simulation - by [http://web.eng.ucsd.edu/~sukamath Sudeep Kamath]
+- *March 24* : Message-optimal leader election - by [http://web.mit.edu/gelash/www/ Rati Gelashvili]
+- *March 17* : An introduction to Program Obfuscation - by [http://toc.csail.mit.edu/user/138 Aloni Cohen]
+- *March 10* : The [http://en.wikipedia.org/wiki/Schaefer%27s_dichotomy_theorem Dichotomy] of Constraint Satisfaction Problems - by [http://www.mit.edu/~pritish Pritish Kamath]
+- *March 3* : The Lasserre Hierarchy - by [https://math.mit.edu/people/profile.php?pid=1535 Alex Wein]
+- *February 24* : An introduction to Combinatorial Game Theory - by [http://toc.csail.mit.edu/user/140 Daniel Grier]
+- *February 20* : Convex optimization tools for obtaining approximate max-flow in /nearly/ linear time - by [http://toc.csail.mit.edu/user/94 Aaron Sidford]
+- *February 12* : [http://en.wikipedia.org/wiki/Busemann%E2%80%93Petty_problem The Busemann-Petty Problem] - by [http://www.ilyaraz.org/ Ilya Razenshteyn]
+- *February 5* : The Spraylist : A Scalable Relaxed Priority Queue - by [http://toc.csail.mit.edu/user/117 Justin Kopinsky]
+- *January 29* : Linear Time Universal Steganography - by [http://toc.csail.mit.edu/user/163 Justin Holmgren]
+- *January 22* : On a randomized version of Fibonacci heaps - by [http://toc.csail.mit.edu/user/147 John Peebles]
+
+== Fall 2013
+- *December 11* : Making games harder using parallel repetition - by [http://www.mit.edu/~hyuen Henry Yuen]
+- *December 4* : A Vignette of Polynomial Identity Testing - by [http://www.mit.edu/~miforbes Michael Forbes]
+- *November 27* : Lower bounds for Branching Programs for Database Queries - by [http://www.mit.edu/~jerryzli Jerry Li]
+- *November 20* : FPT Algorithm for Efficient Multistate Perfect Phylogeny - by [http://toc.csail.mit.edu/user/139 Michael Coulombe]
+- *November 13* : Cilk-style parallelism - by [http://toc.csail.mit.edu/user/142 William Leiserson]
+- *November 6* : Cache-oblivious algorithms - by [http://toc.csail.mit.edu/user/173 Jayson Lynch]
+- *October 30* : A simple topological argument for finding the chromatic number of Kneser graphs - by [http://www.ilyaraz.org/ Ilya Razenshteyn]
+- *October 23* : Research Introductions - by [http://toc.csail.mit.edu/user/55 Mira Radeeva], [http://people.csail.mit.edu/adam/ Adam Bouland], [http://toc.csail.mit.edu/user/81 Alex Dubbs], [https://sites.google.com/site/vakilianali/ Ali Vakilian], [http://toc.csail.mit.edu/user/77 Mohammad Bavarian] and [http://people.csail.mit.edu/smweinberg/ Matt Weinberg]
+
+== Earlier Edition of GITCS
+[http://www.gautamkamath.com/gitcs/ Fall 2012 - Fall 2013]

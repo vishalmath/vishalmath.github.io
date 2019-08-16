@@ -1,0 +1,9 @@
+# jemdoc: menu{MENU}{guidelines.html}
+= Great Ideas in Theoretical Computer Science --- Theory Lunch Edition!
+
+Theory Lunch talks are rather informal. It is neither supposed to be like a conference talk, nor a formal seminar. If you are giving a talk at Theory Lunch, then you should perhaps go through the following, to know what is expected of a Theory Lunch talk.
+
+== Guidelines for a good theory lunch talk!
+- Talks *should* be around 20-25 mins. It is advisable to stick to the time limit! You won't be ousted if you don't, but you may receive silent curses from everybody. :P
+- Spend enough time on motivation and definitions - people are from diverse backgrounds, and you don't want to lose the audience early!
+- This is not a full-fledged seminar, so don't get unnecessarily technical - it is okay to skip even important technical details, for the sake of clarity and relevance.

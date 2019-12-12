@@ -3,25 +3,82 @@
 
 Authors are in alphabetical order as is the tradition in Theory (exceptions marked by †).
 
-Click [publications_list.html here] to see publications in chronological order.
+# Click [publications_topic.html here] to see publications by topic.
 
 Click on any title to see the corresponding abstract!
 
-== Query & Communication Complexity
+== Theses
 ~~~
 {}{raw}
 <ul>
 
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Adventures in Monotone Complexity and TFNP</b></a> [<a href="https://eccc.weizmann.ac.il/report/2018/163/download">pdf</a>]<br/>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Some Hardness Escalation Results in Computational Complexity Theory</b></a> [<a href="files/phd-thesis.pdf">pdf</a>]<br/>
+Pritish Kamath<br/>
+<b>PhD. Thesis (MIT)</b>, 2019<br/>
+<div class="abs">
+<b>Abstract.</b> In this thesis, we prove new <i>hardness escalation</i> results in computational complexity theory; a phenomenon where hardness results against seemingly weak models of computation for any problem can be <i>lifted</i>, in a black box manner, to much stronger models of computation by considering a simple gadget composed version of the original problem.
+
+For any unsatisfiable CNF formula $F$ that is hard to refute in the <i>Resolution</i> proof system, we show that a gadget-composed version of $F$ is hard to refute in any proof system whose lines are computed by efficient communication protocols. This allows us to prove new lower bounds for:<br/><br/>
+<ul style="list-style-type:disc">
+<li> <b>Monotone Circuit Size.</b> We get an exponential lower bound for an explicit monotone function computable by linear sized monotone span programs and also in (non-monotone) $\mathsf{NC}^2$.</li>
+<li> <b>Real Monotone Circuit Size.</b> Our proof technique extends to <i>real</i> communication protocols, which yields similar lower bounds against <i>real</i> monotone circuits.</li>
+<li> <b>Cutting Planes Length.</b> We get exponential lower bound for an explicit CNF contradiction that is refutable with logarithmic Nullstellensatz degree.</li>
+</ul>
+
+Finally, we describe an intimate connection between computational models and communication complexity analogs of the sub-classes of $\mathsf{TFNP}$, the class of all <i>total</i> search problems in $\mathsf{NP}$. We show that the communication analog of $\mathsf{PPA}_p$ captures span programs over $\mathbb{F}_p$ for any prime $p$. This complements previously known results that communication $\mathsf{FP}$ captures formulas (Karchmer--Wigderson, 1988) and that communication $\mathsf{PLS}$ captures circuits (Razborov, 1995).
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Communication Complexity of Permutation-Invariant Functions</b></a> [<a href="files/sm-thesis.pdf">pdf</a>]<br/>
+Pritish Kamath<br/>
+<b>SM Thesis (MIT)</b>, 2015<br/>
+<div class="abs">
+<b>Abstract.</b> Motivated by the quest for a broader understanding of communication complexity of simple functions, we introduce the class of ``permutation-invariant'' functions. A partial function $f:\{0,1\}^n \times \{0,1\}^n\to \{0,1,?\}$ is permutation-invariant if for every bijection $\pi:\{1,\ldots,n\} \to \{1,\ldots,n\}$ and every $\mathbf{x}, \mathbf{y} \in \{0,1\}^n$, it is the case that $f(\mathbf{x}, \mathbf{y}) = f(\mathbf{x}^{\pi}, \mathbf{y}^{\pi})$. Most of the commonly studied functions in communication complexity are permutation-invariant. For such functions, we present a simple complexity measure (computable in time polynomial in $n$ given an implicit description of $f$) that describes their communication complexity up to polynomial factors and up to an additive error that is logarithmic in the input size. This gives a coarse taxonomy of the communication complexity of simple functions.<br/><br/>
+Our work highlights the role of the well-known lower bounds of functions such as <font style="font-variant:small-caps;">Set-Disjointness</font> and <font style="font-variant:small-caps;">Indexing</font>, while complementing them with the relatively lesser-known upper bounds for <font style="font-variant:small-caps;">Gap-Inner-Product</font> (from the sketching literature) and <font style="font-variant:small-caps;">Sparse-Gap-Inner-Product</font> (from the recent work of Canonne et al. [ITCS 2015]). We also present consequences to the study of communication complexity with imperfectly shared randomness where we show that for total permutation-invariant functions, imperfectly shared randomness results in only a polynomial blow-up in communication complexity after an additive $O(\log \log n)$ overhead.
+</div>
+</li>
+</ul>
+~~~
+
+
+== Publications and Pre-prints
+
+~~~
+{}{raw}
+<ul>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>On the Complexity of Modulo-$q$ Arguments and the Chevalley-Warning Theorem</b></a> [<a href="https://arxiv.org/abs/1912.04467">pdf</a>]<br/>
+<a href="http://www.cs.utoronto.ca/~mgoos/">Mika Göös</a>, Pritish Kamath, <a href="http://www.mit.edu/~katesot/">Katerina Sotiraki</a>, <a href="http://www.mit.edu/~mzampet/">Manolis Zampetakis</a><br/>
+<b>Manuscript</b>, 2019<br/>
+<div class="abs">
+<b>Abstract.</b> We study the search problem class $\mathsf{PPA}_q$ defined as a modulo-$q$ analog of the well-known <i>polynomial parity argument</i> class $\mathsf{PPA}$ introduced by Papadimitriou '94. Our first result shows that this class can be characterized in terms of $\mathsf{PPA}_p$ for prime $p$.<br/>
+Our main result is to establish that an <i>explicit</i> version of a search problem associated to the Chevalley--Warning theorem is complete for $\mathsf{PPA}_p$ for prime $p$. This problem is <i>natural</i> in that it does not explicitly involve circuits as part of the input. It is the first such complete problem for $\mathsf{PPA}_p$ when $p \ge 3$.<br/>
+Finally we discuss connections between Chevalley-Warning theorem and the well-studied <i>short integer solution</i> problem and survey the structural properties of $\mathsf{PPA}_q$. 
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Adventures in Monotone Complexity and $\mathsf{TFNP}$</b></a> [<a href="https://eccc.weizmann.ac.il/report/2018/163/download">pdf</a>]<br/>
 <a href="http://www.cs.utoronto.ca/~mgoos/">Mika Göös</a>, Pritish Kamath, <a href="https://www.cs.toronto.edu/~robere/">Robert Robere</a>, <a href="https://logic.pdmi.ras.ru/~sokolov/">Dmitry Sokolov</a><br/>
 Innovations in Theoretical Computer Science <b>(ITCS)</b>, 2019<br/>
 <i>(invited talk at <a href="http://www.mit.edu/~mzampet/workshop/tfnp.html">FOCS 2018 workshop on TFNP</a>)</i>
 <div class="abs">
 <b>Abstract.</b> <br/>
-<i>Separations:</i> We introduce a monotone variant of $\mathrm{XOR}\text{-}\mathrm{SAT}$ and show it has exponential monotone circuit complexity. Since $\mathrm{XOR}\text{-}\mathrm{SAT}$ is in $\mathsf{NC}^2$, this improves qualitatively on the monotone vs. non-monotone separation of Tardos (1988). We also show that monotone span programs over $\mathbb{R}$ can be exponentially more powerful than over finite fields. These results can be interpreted as separating subclasses of $\mathsf{TFNP}$ in communication complexity.<br/><br/>
+<i>Separations:</i> We introduce a monotone variant of $\mathrm{Xor}\text{-}\mathrm{SAT}$ and show it has exponential monotone circuit complexity. Since $\mathrm{Xor}\text{-}\mathrm{SAT}$ is in $\mathsf{NC}^2$, this improves qualitatively on the monotone vs. non-monotone separation of Tardos (1988). We also show that monotone span programs over $\mathbb{R}$ can be exponentially more powerful than over finite fields. These results can be interpreted as separating subclasses of $\mathsf{TFNP}$ in communication complexity.<br/><br/>
 
 <i>Characterizations:</i> We show that the communication (resp. query) analogue of $\mathsf{PPA}$ (subclass of $\mathsf{TFNP}$) captures span programs over $\mathbb{F}_2$ (resp. Nullstellensatz degree over $\mathbb{F}_2$). Previously, it was known that communication $\mathsf{FP}$ captures formulas (Karchmer-Wigderson, 1988) and that communication $\mathsf{PLS}$ captures circuits (Razborov, 1995).
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Bayesian Inference of Temporal Task Specifications from Demonstrations</b></a> [<a href="https://interactive.mit.edu/sites/default/files/documents/nips_2018_preprint.pdf">pdf</a>]<br/>
+† <a href="http://interactive.mit.edu/about/people/ankit">Ankit Shah</a>, Pritish Kamath, <a href="http://interactive.mit.edu/about/people/shen">Shen Li</a>, <a href="http://interactive.mit.edu/about/people/julie">Julie Shah</a><br/>
+Neural Information Processing Systems <b>(NIPS)</b>, 2018
+<div class="abs">
+<b>Abstract.</b> When observing task demonstrations, human apprentices are able to identify whether a given task is executed correctly long before they gain expertise in actually performing that task. Prior research into learning from demonstrations (LfD) has failed to capture this notion of the acceptability of an execution; meanwhile, temporal logics provide a flexible language for expressing task specifications. Inspired by this, we present Bayesian specification inference, a probabilistic model for inferring task specification as a temporal logic formula. We incorporate methods from probabilistic programming to define our priors, along with a domain-independent likelihood function to enable sampling-based inference. We demonstrate the efficacy of our model for inferring specifications with over 90% similarity between the inferred specification and the ground truth, both within a synthetic domain and a real-world table setting task.
 </div>
 </li>
 
@@ -35,22 +92,6 @@ Symposium on Theory Of Computing <b>(STOC)</b>, 2018
 </li>
 
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Query-to-Communication Lifting for $\mathrm{P}^{\mathrm{NP}}$</b></a> [<a href="https://eccc.weizmann.ac.il/report/2017/024/download/">pdf</a>]<br/>
-<a href="http://www.cs.utoronto.ca/~mgoos/">Mika Göös</a>, Pritish Kamath, <a href="https://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, <a href="http://umdrive.memphis.edu/twwtson1/public/">Thomas Watson</a><br/>
-Computational Complexity Conference <b>(CCC)</b>, 2017
-<div class="abs">
-<b>Abstract.</b> We prove that the $\mathrm{P}^{\mathrm{NP}}$-type query complexity (alternatively, decision list width) of any boolean function $f$ is quadratically related to the $\mathrm{P}^{\mathrm{NP}}$-type communication complexity of a lifted version of $f$. As an application, we show that a certain "product" lower bound method of Impagliazzo and Williams (CCC 2010) fails to capture $\mathrm{P}^{\mathrm{NP}}$ communication complexity up to polynomial factors, which answers a question of Papakonstantinou, Scheder, and Song (CCC 2014). 
-</div>
-</li>
-</ul>
-~~~
-
-== Correlated Randomness & Uncertainty in Communication
-
-~~~
-{}{raw}
-<ul>
-<li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Dimension Reduction for Polynomials over Gaussian Space and Applications</b></a> [<a href="files/GKR_DimRedPolys.pdf">shorter</a>][<a href="https://eccc.weizmann.ac.il/report/2017/125/download">longer</a>]<br/>
 <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Pritish Kamath, <a href="http://www.eecs.berkeley.edu/~prasad/">Prasad Raghavendra</a><br/>
 Computational Complexity Conference <b>(CCC)</b>, 2018
@@ -62,13 +103,22 @@ Our technique of dimension reduction for low-degree polynomials is simple and ca
 </li>
 
 <li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Decidability of Non-Interactive Simulation of Joint Distributions</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/104/download">pdf</a>]<br/>
-<a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Pritish Kamath, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
-Foundations of Computer Science <b>(FOCS)</b>, 2016
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Query-to-Communication Lifting for $\mathrm{P}^{\mathrm{NP}}$</b></a> [<a href="https://eccc.weizmann.ac.il/report/2017/024/download/">pdf</a>]<br/>
+<a href="http://www.cs.utoronto.ca/~mgoos/">Mika Göös</a>, Pritish Kamath, <a href="https://www.cs.toronto.edu/~toni/">Toniann Pitassi</a>, <a href="http://umdrive.memphis.edu/twwtson1/public/">Thomas Watson</a><br/>
+Computational Complexity Conference <b>(CCC)</b>, 2017
 <div class="abs">
-<b>Abstract.</b> We present decidability results for a sub-class of "non-interactive" simulation problems, a well-studied class of problems in information theory. A <i>non-interactive simulation</i> problem is specified by two distributions $P(x,y)$ and $Q(u,v)$: The goal is to determine if two players, Alice and Bob, that observe sequences $X^n$ and $Y^n$ respectively, where $\{(X_i, Y_i)\}_{i=1}^n$ are drawn i.i.d. from $P(x,y)$, can generate pairs $U$ and $V$ respectively (without communicating with each other) with a joint distribution that is arbitrarily close in total variation to $Q(u,v)$. Even when $P$ and $Q$ are extremely simple: e.g., $P$ is uniform on the triples $\{(0,0), (0,1), (1,0)\}$ and $Q$ is a "doubly symmetric binary source", i.e., $U$ and $V$ are uniform $\pm 1$ variables with correlation say $0.49$, it is open if $P$ can simulate $Q$.<br/><br/>
+<b>Abstract.</b> We prove that the $\mathrm{P}^{\mathrm{NP}}$-type query complexity (alternatively, decision list width) of any boolean function $f$ is quadratically related to the $\mathrm{P}^{\mathrm{NP}}$-type communication complexity of a lifted version of $f$. As an application, we show that a certain "product" lower bound method of Impagliazzo and Williams (CCC 2010) fails to capture $\mathrm{P}^{\mathrm{NP}}$ communication complexity up to polynomial factors, which answers a question of Papakonstantinou, Scheder, and Song (CCC 2014). 
+</div>
+</li>
 
-In this work, we show that whenever $P$ is a distribution on a finite domain and $Q$ is a $2 \times 2$ distribution, then the non-interactive simulation problem is <i>decidable</i>: specifically, given $\delta > 0$ the algorithm runs in time bounded by some function of $P$ and $\delta$ and either gives a non-interactive simulation protocol that is $\delta$-close to $Q$ or asserts that no protocol gets $O(\delta)$-close to $Q$. The main challenge to such a result is determining explicit (computable) convergence bounds on the number $n$ of samples that need to be drawn from $P(x,y)$ to get $\delta$-close to $Q$. We invoke contemporary results from the analysis of Boolean functions such as the invariance principle and a regularity lemma to obtain such explicit bounds.
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Improved Bounds for Universal One-Bit Compressive Sensing</b></a> [<a href="https://arxiv.org/abs/1705.00763">pdf</a>]<br/>
+<a href="http://people.ece.cornell.edu/acharya/">Jayadev Acharya</a>, <a href="http://drona.csa.iisc.ernet.in/~arnabb/">Arnab Bhattacharyya</a>, Pritish Kamath<br/>
+International Symposium on Information Theory <b>(ISIT)</b>, 2017
+<div class="abs">
+<b>Abstract.</b> Unlike compressive sensing where the measurement outputs are assumed to be real-valued and have infinite precision, in <i>one-bit compressive sensing</i>, measurements are quantized to one bit, their signs. In this work, we show how to recover the support of sparse high-dimensional vectors in the one-bit compressive sensing framework with an asymptotically near-optimal number of measurements. We also improve the bounds on the number of measurements for approximately recovering vectors from one-bit compressive sensing measurements. Our results are universal, namely the same measurement scheme works simultaneously for all sparse vectors.<br/><br/>
+
+Our proof of optimality for support recovery is obtained by showing an equivalence between the task of support recovery using 1-bit compressive sensing and a well-studied combinatorial object known as Union Free Families.
 </div>
 </li>
 
@@ -82,7 +132,13 @@ Innovations in Theoretical Computer Science <b>(ITCS)</b>, 2017
 We show that a natural uniform algorithm can compress the communication down to an average cost per message of $O(H(Q) + \log (D(P || Q) + O(1))$ in $\widetilde{O}(T_\varepsilon)$ iterations while allowing for $O(\varepsilon)$-error, where $D(\cdot || \cdot)$ denotes the KL-divergence between distributions. For large divergences this compares favorably with the static algorithm that ignores all samples and compresses down to $H(Q) + D(P || Q)$ bits, while not requiring $T_\varepsilon\cdot K$ iterations that it would take players to develop optimal but separate compressions for each pair of players. Along the way we introduce a "data-structural" view of the task of communicating with a natural language and show that our natural algorithm can also be implemented by an efficient data structure, whose storage is comparable to the storage requirements of $Q$ and whose query complexity is comparable to the lengths of the message to be compressed. Our results give a plausible mathematical analogy to the mechanisms by which human languages get created and evolve, and in particular highlights the possibility of coordination towards a joint task (agreeing on a language) while engaging in distributed learning.
 </div>
 </li>
+</ul>
+~~~
 
+#=== 2016
+~~~
+{}{raw}
+<ul>
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>The Optimality of Correlated Sampling</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/194/download/">pdf</a>]<br/>
 <a href="http://bavarian.mit.edu/">Mohammad Bavarian</a>, <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Elad Haramaty, Pritish Kamath, <a href="https://people.csail.mit.edu/rivest/">Ronald L. Rivest</a>, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
@@ -93,6 +149,17 @@ We show that a natural uniform algorithm can compress the communication down to 
 In this note, we give a surprisingly simple proof that this protocol is in fact tight. Specifically, for every $\delta \in (0,1)$, we show that any correlated sampling scheme should have disagreement probability at least $2\delta/(1+\delta)$. This partially answers a recent question of Rivest.<br/><br/>
 
 Our proof is based on studying a new problem we call <i>constrained agreement</i>. Here, Alice is given a subset $A \subseteq [n]$ and is required to output an element $i \in A$, Bob is given a subset $B \subseteq [n]$ and is required to output an element $j \in B$, and the goal is to minimize the probability that $i \neq j$. We prove tight bounds on this question, which turn out to imply tight bounds for correlated sampling. Though we settle basic questions about the two problems, our formulation also leads to several questions that remain open.
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Decidability of Non-Interactive Simulation of Joint Distributions</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/104/download">pdf</a>]<br/>
+<a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Pritish Kamath, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
+Foundations of Computer Science <b>(FOCS)</b>, 2016
+<div class="abs">
+<b>Abstract.</b> We present decidability results for a sub-class of "non-interactive" simulation problems, a well-studied class of problems in information theory. A <i>non-interactive simulation</i> problem is specified by two distributions $P(x,y)$ and $Q(u,v)$: The goal is to determine if two players, Alice and Bob, that observe sequences $X^n$ and $Y^n$ respectively, where $\{(X_i, Y_i)\}_{i=1}^n$ are drawn i.i.d. from $P(x,y)$, can generate pairs $U$ and $V$ respectively (without communicating with each other) with a joint distribution that is arbitrarily close in total variation to $Q(u,v)$. Even when $P$ and $Q$ are extremely simple: e.g., $P$ is uniform on the triples $\{(0,0), (0,1), (1,0)\}$ and $Q$ is a "doubly symmetric binary source", i.e., $U$ and $V$ are uniform $\pm 1$ variables with correlation say $0.49$, it is open if $P$ can simulate $Q$.<br/><br/>
+
+In this work, we show that whenever $P$ is a distribution on a finite domain and $Q$ is a $2 \times 2$ distribution, then the non-interactive simulation problem is <i>decidable</i>: specifically, given $\delta > 0$ the algorithm runs in time bounded by some function of $P$ and $\delta$ and either gives a non-interactive simulation protocol that is $\delta$-close to $Q$ or asserts that no protocol gets $O(\delta)$-close to $Q$. The main challenge to such a result is determining explicit (computable) convergence bounds on the number $n$ of samples that need to be drawn from $P(x,y)$ to get $\delta$-close to $Q$. We invoke contemporary results from the analysis of Boolean functions such as the invariance principle and a regularity lemma to obtain such explicit bounds.
 </div>
 </li>
 
@@ -109,7 +176,29 @@ Our work highlights the role of the well-known lower bounds of functions such as
 </ul>
 ~~~
 
-== Algebraic Complexity
+#=== 2015
+
+~~~
+{}{raw}
+<ul>
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Communication with partial noiseless feedback</b></a> [<a href="http://drops.dagstuhl.de/opus/volltexte/2015/5342/pdf/52.pdf">pdf</a>]<br/>
+<a href="http://www.cs.cmu.edu/~haeupler">Bernhard Haeupler</a>, Pritish Kamath, <a href="http://www.cs.cmu.edu/~avelingk">Ameya Velingker</a><br/>
+International Workshop on Randomization and Computation <b>(RANDOM)</b>, 2015
+<div class="abs">
+<b>Abstract.</b> We introduce the notion of <i>one-way communication schemes with partial noiseless feedback</i>. In this setting, Alice wishes to communicate a message to Bob by using a communication scheme that involves sending a sequence of bits over a channel while receiving feedback bits from Bob for $\delta$ fraction of the transmissions. An adversary is allowed to corrupt up to a constant fraction of Alice's transmissions, while the feedback is always uncorrupted. Motivated by questions related to coding for interactive communication, we seek to determine the maximum error rate, as a function of $0 \le \delta \le 1$, such that Alice can send a message to Bob via some protocol with $\delta$ fraction of noiseless feedback. The case $\delta = 1$ corresponds to <i>full feedback</i>, in which the result of Berlekamp ['64] implies that the maximum tolerable error rate is $1/3$, while the case $\delta = 0$ corresponds to <i>no feedback</i>, in which the maximum tolerable error rate is $1/4$, achievable by use of a binary error-correcting code.<br/><br/>
+
+In this work, we show that for any $\delta \in (0,1]$ and $\gamma \in [0, 1/3)$, there exists a <i>randomized</i> communication scheme with noiseless $\delta$-feedback, such that the probability of miscommunication is low, as long as no more than a $\gamma$ fraction of the rounds are corrupted. Moreover, we show that for any $\delta \in (0, 1]$ and $\gamma < f(\delta)$, there exists a <i>deterministic</i> communication scheme with noiseless $\delta$-feedback that always decodes correctly as long as no more than a $\gamma$ fraction of rounds are corrupted. Here $f$ is a monotonically increasing, piecewise linear, continuous function with $f(0) = 1/4$ and $f(1) = 1/3$. Also, the rate of communication in both cases is constant (dependent on $\delta$ and $\gamma$ but independent of the input length).
+</div>
+</li>
+</ul>
+~~~
+
+#=== 2014
+
+#- [http://madhu.seas.harvard.edu/papers.html On leave?]
+
+#=== 2013
 
 ~~~
 {}{raw}
@@ -139,44 +228,7 @@ We show here that any homogeneous depth four arithmetic circuit with bottom fani
 </ul>
 ~~~
 
-== Miscellaneous Publications
-~~~
-{}{raw}
-<ul>
-<li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Bayesian Inference of Temporal Task Specifications from Demonstrations</b></a> [<a href="https://interactive.mit.edu/sites/default/files/documents/nips_2018_preprint.pdf">pdf</a>]<br/>
-† <a href="http://interactive.mit.edu/about/people/ankit">Ankit Shah</a>, Pritish Kamath, <a href="http://interactive.mit.edu/about/people/shen">Shen Li</a>, <a href="http://interactive.mit.edu/about/people/julie">Julie Shah</a><br/>
-Neural Information Processing Systems <b>(NIPS)</b>, 2018
-<div class="abs">
-<b>Abstract.</b> When observing task demonstrations, human apprentices are able to identify whether a given task is executed correctly long before they gain expertise in actually performing that task. Prior research into learning from demonstrations (LfD) has failed to capture this notion of the acceptability of an execution; meanwhile, temporal logics provide a flexible language for expressing task specifications. Inspired by this, we present Bayesian specification inference, a probabilistic model for inferring task specification as a temporal logic formula. We incorporate methods from probabilistic programming to define our priors, along with a domain-independent likelihood function to enable sampling-based inference. We demonstrate the efficacy of our model for inferring specifications with over 90% similarity between the inferred specification and the ground truth, both within a synthetic domain and a real-world table setting task.
-</div>
-</li>
-
-<li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Improved Bounds for Universal One-Bit Compressive Sensing</b></a> [<a href="https://arxiv.org/abs/1705.00763">pdf</a>]<br/>
-<a href="http://people.ece.cornell.edu/acharya/">Jayadev Acharya</a>, <a href="http://drona.csa.iisc.ernet.in/~arnabb/">Arnab Bhattacharyya</a>, Pritish Kamath<br/>
-International Symposium on Information Theory <b>(ISIT)</b>, 2017
-<div class="abs">
-<b>Abstract.</b> Unlike compressive sensing where the measurement outputs are assumed to be real-valued and have infinite precision, in <i>one-bit compressive sensing</i>, measurements are quantized to one bit, their signs. In this work, we show how to recover the support of sparse high-dimensional vectors in the one-bit compressive sensing framework with an asymptotically near-optimal number of measurements. We also improve the bounds on the number of measurements for approximately recovering vectors from one-bit compressive sensing measurements. Our results are universal, namely the same measurement scheme works simultaneously for all sparse vectors.<br/><br/>
-
-Our proof of optimality for support recovery is obtained by showing an equivalence between the task of support recovery using 1-bit compressive sensing and a well-studied combinatorial object known as Union Free Families.
-</div>
-</li>
-
-<li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Communication with partial noiseless feedback</b></a> [<a href="http://drops.dagstuhl.de/opus/volltexte/2015/5342/pdf/52.pdf">pdf</a>]<br/>
-<a href="http://www.cs.cmu.edu/~haeupler">Bernhard Haeupler</a>, Pritish Kamath, <a href="http://www.cs.cmu.edu/~avelingk">Ameya Velingker</a><br/>
-International Workshop on Randomization and Computation <b>(RANDOM)</b>, 2015
-<div class="abs">
-<b>Abstract.</b> We introduce the notion of <i>one-way communication schemes with partial noiseless feedback</i>. In this setting, Alice wishes to communicate a message to Bob by using a communication scheme that involves sending a sequence of bits over a channel while receiving feedback bits from Bob for $\delta$ fraction of the transmissions. An adversary is allowed to corrupt up to a constant fraction of Alice's transmissions, while the feedback is always uncorrupted. Motivated by questions related to coding for interactive communication, we seek to determine the maximum error rate, as a function of $0 \le \delta \le 1$, such that Alice can send a message to Bob via some protocol with $\delta$ fraction of noiseless feedback. The case $\delta = 1$ corresponds to <i>full feedback</i>, in which the result of Berlekamp ['64] implies that the maximum tolerable error rate is $1/3$, while the case $\delta = 0$ corresponds to <i>no feedback</i>, in which the maximum tolerable error rate is $1/4$, achievable by use of a binary error-correcting code.<br/><br/>
-
-In this work, we show that for any $\delta \in (0,1]$ and $\gamma \in [0, 1/3)$, there exists a <i>randomized</i> communication scheme with noiseless $\delta$-feedback, such that the probability of miscommunication is low, as long as no more than a $\gamma$ fraction of the rounds are corrupted. Moreover, we show that for any $\delta \in (0, 1]$ and $\gamma < f(\delta)$, there exists a <i>deterministic</i> communication scheme with noiseless $\delta$-feedback that always decodes correctly as long as no more than a $\gamma$ fraction of rounds are corrupted. Here $f$ is a monotonically increasing, piecewise linear, continuous function with $f(0) = 1/4$ and $f(1) = 1/3$. Also, the rate of communication in both cases is constant (dependent on $\delta$ and $\gamma$ but independent of the input length).
-</div>
-</li>
-</ul>
-~~~
-
-== Undergraduate Research (before 2013)
+== Before 2013 (Undergraduate Research)
 
 ~~~
 {}{raw}

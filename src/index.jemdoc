@@ -4,30 +4,25 @@
 ~~~
 {}{img_left}{images/pritish5.jpg}{That's me}{200}{200}{}
 [index.html Pritish Kamath]\n
-Graduate Student\n
-[http://toc.csail.mit.edu TOC] @ [http://www.csail.mit.edu/ CSAIL], [https://www.eecs.mit.edu/ EECS], [http://www.mit.edu MIT]\n
-[http://toc.seas.harvard.edu TOC] @ [http://www.seas.harvard.edu SEAS], [http://www.harvard.edu Harvard]
+Post Doctoral Scholar\n
+[https://www.ttic.edu/ Toyota Technological Institute at Chicago]
 
 == Contact
-Office: 32-G596, Stata Center\n
-Email: $\mathrm{pritish@mit.edu}$
-#{{<img src="email.png" alt="email ID" />}}\n
+#Email: $\mathrm{pritish@ttic.edu}$
+{{Email: <img class="eq" src="src/eqs/495759468719538191-130.png" alt="mathrm{pritish [at] ttic [dot] edu}" style="vertical-align: -4px">}}
 ~~~
 
-{{<font color="red">NEW</font>}} Starting Fall 2019, I'm going to be a post-doc at [https://www.ttic.edu/ Toyota Technological Institute, Chicago].
+/We shape our mathematics; thereafter our mathematics shapes us.../
 
 == Brief Biography
-I am a graduate student at MIT. I am very fortunate to be advised by Prof. [http://people.csail.mit.edu/madhu Madhu Sudan] and Prof. [http://people.csail.mit.edu/ronitt Ronitt Rubinfeld]. I also occasionally visit the [http://toc.seas.harvard.edu Theory CS group] at [http://www.harvard.edu Harvard]. I am enthusiastic about Theoretical Computer Science and Mathematics, and am particularly interested in various aspects of Computational Complexity Theory.
+I am a post-doctoral scholar at [https://www.ttic.edu/ Toyota Technological Institute, Chicago] hosted by [http://ttic.uchicago.edu/~nati/ Nati Srebro]. My current research focus is in the theoretical foundations of Machine Learning. I am also enthusiastic about Theoretical Computer Science and Mathematics, especially Computational Complexity Theory.
 
-Recently, I have also been interested in theoretical machine learning, especially deep learning. In Summer 2018, I interned at [https://deepmind.com/ Google DeepMind] where I worked with [https://sites.ualberta.ca/~szepesva/ Csaba Szepesvári].
+I obtained my PhD. at MIT, where I was very fortunate to be advised by [madhu.seas.harvard.edu/ Madhu Sudan] and [http://people.csail.mit.edu/ronitt Ronitt Rubinfeld]. I used to occasionally also visit the [http://toc.seas.harvard.edu Theory CS group] at [http://www.harvard.edu Harvard]. In Summer 2018, I was a research intern at [https://deepmind.com/ Google DeepMind] (London), where I worked with [https://sites.ualberta.ca/~szepesva/ Csaba Szepesvári]. In Summer 2019, I was a Research Fellow in the [https://simons.berkeley.edu/programs/dl2019 Foundations of Deep Learning] program at the [https://simons.berkeley.edu/ Simons Insitute].
 
 Before coming to MIT, I graduated from [http://www.iitb.ac.in IIT Bombay] with a B. Tech in [http://www.cse.iitb.ac.in Computer Science and Engineering] in 2012. After that, I spent a year at [http://research.microsoft.com/en-us/labs/india/default.aspx Microsoft Research India] as a Research Assistant, where I had a great experience working under the guidance of [http://research.microsoft.com/en-us/people/neeraka/ Neeraj Kayal] in the area of Algebraic Complexity.
 
-{{<strike>I co-organize the <a href="acseminar.html">A&C Seminar</a> at MIT. Please contact me if you want to give a talk!</strike>}}\n
-I used to co-organize the [acseminar.html A&C Seminar] at MIT. But no more! Please contact the [http://www.mit.edu/~quanquan/acseminar/ new organizers] if you want to give a talk!
-
 == CV
-You can find my CV [files/Kamath_CV_2019-01-20.pdf here].
+You can find my (perpetually outdated) CV [files/Kamath_CV_2019-01-20.pdf here].
 
 == Visitor Flag Counter
 I set up this flag counter for curiosity. It shows counts since Jan 27, 2018.

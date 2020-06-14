@@ -52,7 +52,7 @@ Our work highlights the role of the well-known lower bounds of functions such as
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Approximate is Good Enough: Probabilistic Variants of Dimensional and Margin Complexity</b></a> [<a href="https://arxiv.org/abs/2003.04180">pdf</a>]<br/>
 Pritish Kamath, <a href="https://ttic.uchicago.edu/~omar/">Omar Montasser</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
-<b>Manuscript</b>, 2020<br/>
+Conference on Learning Theory <b>(COLT)</b>, 2020<br/>
 <div class="abs">
 <b>Abstract.</b> We present and study approximate notions of dimensional and margin complexity, which correspond to the minimal dimension or norm of an embedding required to approximate, rather then exactly represent, a given hypothesis class. We show that such notions are not only sufficient for learning using linear predictors or a kernel, but unlike the exact variants, are also necessary. Thus they are better suited for discussing limitations of linear or kernel methods.
 </div>
@@ -61,11 +61,33 @@ Pritish Kamath, <a href="https://ttic.uchicago.edu/~omar/">Omar Montasser</a>, <
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>On the Complexity of Modulo-$q$ Arguments and the Chevalley-Warning Theorem</b></a> [<a href="https://arxiv.org/abs/1912.04467">pdf</a>]<br/>
 <a href="http://www.cs.utoronto.ca/~mgoos/">Mika Göös</a>, Pritish Kamath, <a href="http://www.mit.edu/~katesot/">Katerina Sotiraki</a>, <a href="http://www.mit.edu/~mzampet/">Manolis Zampetakis</a><br/>
-<b>Manuscript</b>, 2019<br/>
+Computational Complexity Conference <b>(CCC)</b>, 2020<br/>
 <div class="abs">
-<b>Abstract.</b> We study the search problem class $\mathsf{PPA}_q$ defined as a modulo-$q$ analog of the well-known <i>polynomial parity argument</i> class $\mathsf{PPA}$ introduced by Papadimitriou '94. Our first result shows that this class can be characterized in terms of $\mathsf{PPA}_p$ for prime $p$.<br/>
-Our main result is to establish that an <i>explicit</i> version of a search problem associated to the Chevalley--Warning theorem is complete for $\mathsf{PPA}_p$ for prime $p$. This problem is <i>natural</i> in that it does not explicitly involve circuits as part of the input. It is the first such complete problem for $\mathsf{PPA}_p$ when $p \ge 3$.<br/>
+<b>Abstract.</b> We study the search problem class $\mathsf{PPA}_q$ defined as a modulo-$q$ analog of the well-known <i>polynomial parity argument</i> class $\mathsf{PPA}$ introduced by Papadimitriou '94. Our first result shows that this class can be characterized in terms of $\mathsf{PPA}_p$ for prime $p$.<br/><br/>
+Our main result is to establish that an <i>explicit</i> version of a search problem associated to the Chevalley--Warning theorem is complete for $\mathsf{PPA}_p$ for prime $p$. This problem is <i>natural</i> in that it does not explicitly involve circuits as part of the input. It is the first such complete problem for $\mathsf{PPA}_p$ when $p \ge 3$.<br/><br/>
 Finally we discuss connections between Chevalley-Warning theorem and the well-studied <i>short integer solution</i> problem and survey the structural properties of $\mathsf{PPA}_q$. 
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Limits on the Efficiency of (Ring) LWE based Non-Interactive Key Exchange</b></a> [<a href="files/GKRS_Key-Exchange-LWE.pdf">pdf</a>]<br/>
+<a href="https://sites.google.com/site/siyaoguo/">Siyao Guo</a>, Pritish Kamath, <a href="https://www.alonrosen.net/">Alon Rosen</a>, <a href="http://www.mit.edu/~katesot/">Katerina Sotiraki</a><br/>
+Public Key Crytography <b>(PKC)</b>, 2020<br/>
+<div class="abs">
+<b>Abstract.</b> <br/>
+$\mathsf{LWE}$ based key-exchange protocols lie at the heart of post-quantum public-key cryptography. However, all existing protocols either lack the <i>non-interactive</i> nature of Diffie-Hellman key-exchange or <i>polynomial</i> $\mathsf{LWE}$-modulus, resulting in unwanted efficiency overhead.
+
+We study the possibility of designing non-interactive $\mathsf{LWE}$-based protocols with <i>polynomial</i> $\mathsf{LWE}$-modulus. To this end,<br/><br/>
+<ul>
+<li> We identify and formalize simple non-interactive and polynomial $\mathsf{LWE}$-modulus variants of existing protocols, where Alice and Bob <i>simultaneously</i> exchange one or more (ring) $\mathsf{LWE}$ samples with polynomial $\mathsf{LWE}$-modulus and then run individual key reconciliation functions to obtain the shared key.
+<li>  We point out central barriers and show that such non-interactive key-exchange protocols are impossible if:<br/><br/>
+	<ol>
+	<li> the reconciliation functions first compute the inner product of the received $\mathsf{LWE}$ sample with their private $\mathsf{LWE}$ secret. This impossibility is information theoretic.</li>
+	<li> One of the reconciliation functions does not depend on the error of the transmitted $\mathsf{LWE}$ sample. This impossibility assumes hardness of $\mathsf{LWE}$.</li>
+	</ol>
+<li>We give further evidence that progress in either direction, of giving an $\mathsf{LWE}$-based non-interactive key exchange protocol or proving impossibility of one will lead to progress on some other well-studied questions in cryptography.</li>
+</ul>
+ Overall, our results show possibilities and challenges in designing simple (ring) $\mathsf{LWE}$-based non-interactive key exchange protocols.
 </div>
 </li>
 
@@ -151,7 +173,7 @@ We show that a natural uniform algorithm can compress the communication down to 
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>The Optimality of Correlated Sampling</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/194/download/">pdf</a>]<br/>
 <a href="http://bavarian.mit.edu/">Mohammad Bavarian</a>, <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Elad Haramaty, Pritish Kamath, <a href="https://people.csail.mit.edu/rivest/">Ronald L. Rivest</a>, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
-<b>Manuscript</b>, 2016
+Theory of Computing <b>(TOC)</b>, <i>(to appear)</i>
 <div class="abs">
 <b>Abstract.</b> In the <i>correlated sampling</i> problem, two players, say Alice and Bob, are given two distributions, say $P$ and $Q$ respectively, over the same universe and access to shared randomness. The two players are required to output two elements, without any interaction, sampled according to their respective distributions, while trying to minimize the probability that their outputs disagree. A well-known protocol due to Holenstein, with close variants (for similar problems) due to Broder, and to Kleinberg and Tardos, solves this task with disagreement probability at most $2 \delta/(1+\delta)$, where $\delta$ is the total variation distance between $P$ and $Q$. This protocol has been used in several different contexts including sketching algorithms, approximation algorithms based on rounding linear programming relaxations, the study of parallel repetition and cryptography.<br/><br/>
 

@@ -50,6 +50,15 @@ Our work highlights the role of the well-known lower bounds of functions such as
 <ul>
 
 <li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Does Invariant Risk Minimization Capture Invariance?</b></a> [<a href="https://arxiv.org/abs/2101.01134">pdf</a>]<br/>
+Pritish Kamath, <a>Akilesh Tangella</a>, <a href="https://djsutherland.ml/">Danica J. Sutherland</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
+Artificial Intelligence and Statistics Conference <b>(AISTATS)</b>, 2021<br/>
+<div class="abs">
+<b>Abstract.</b> We show that the Invariant Risk Minimization (IRM) formulation of Arjovsky et al. (2019) can fail to capture "natural" invariances, at least when used in its practical "linear" form, and even on very simple problems which directly follow the motivating examples for IRM. This can lead to worse generalization on new environments, even when compared to unconstrained ERM. The issue stems from a significant gap between the linear variant (as in their concrete method IRMv1) and the full non-linear IRM formulation. Additionally, even when capturing the "right" invariances, we show that it is possible for IRM to learn a sub-optimal predictor, due to the loss function not being invariant across environments. The issues arise even when measuring invariance on the population distributions, but are exacerbated by the fact that IRM is extremely fragile to sampling. 
+</div>
+</li>
+
+<li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Approximate is Good Enough: Probabilistic Variants of Dimensional and Margin Complexity</b></a> [<a href="https://arxiv.org/abs/2003.04180">pdf</a>]<br/>
 Pritish Kamath, <a href="https://ttic.uchicago.edu/~omar/">Omar Montasser</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
 Conference on Learning Theory <b>(COLT)</b>, 2020<br/>

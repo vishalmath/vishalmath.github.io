@@ -53,8 +53,9 @@ Our work highlights the role of the well-known lower bounds of functions such as
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Does Invariant Risk Minimization Capture Invariance?</b></a> [<a href="https://arxiv.org/abs/2101.01134">pdf</a>]<br/>
 Pritish Kamath, <a>Akilesh Tangella</a>, <a href="https://djsutherland.ml/">Danica J. Sutherland</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
 Artificial Intelligence and Statistics Conference <b>(AISTATS)</b>, 2021<br/>
+<i>(Selected for Oral presentation)</i>
 <div class="abs">
-<b>Abstract.</b> We show that the Invariant Risk Minimization (IRM) formulation of Arjovsky et al. (2019) can fail to capture "natural" invariances, at least when used in its practical "linear" form, and even on very simple problems which directly follow the motivating examples for IRM. This can lead to worse generalization on new environments, even when compared to unconstrained ERM. The issue stems from a significant gap between the linear variant (as in their concrete method IRMv1) and the full non-linear IRM formulation. Additionally, even when capturing the "right" invariances, we show that it is possible for IRM to learn a sub-optimal predictor, due to the loss function not being invariant across environments. The issues arise even when measuring invariance on the population distributions, but are exacerbated by the fact that IRM is extremely fragile to sampling. 
+<b>Abstract.</b> We show that the Invariant Risk Minimization (IRM) formulation of Arjovsky et al. (2019) can fail to capture "natural" invariances, at least when used in its practical "linear" form, and even on very simple problems which directly follow the motivating examples for IRM. This can lead to worse generalization on new environments, even when compared to unconstrained ERM. The issue stems from a significant gap between the linear variant (as in their concrete method IRMv1) and the full non-linear IRM formulation. Additionally, even when capturing the "right" invariances, we show that it is possible for IRM to learn a sub-optimal predictor, due to the loss function not being invariant across environments. The issues arise even when measuring invariance on the population distributions, but are exacerbated by the fact that IRM is extremely fragile to sampling.
 </div>
 </li>
 
@@ -64,6 +65,20 @@ Pritish Kamath, <a href="https://ttic.uchicago.edu/~omar/">Omar Montasser</a>, <
 Conference on Learning Theory <b>(COLT)</b>, 2020<br/>
 <div class="abs">
 <b>Abstract.</b> We present and study approximate notions of dimensional and margin complexity, which correspond to the minimal dimension or norm of an embedding required to approximate, rather then exactly represent, a given hypothesis class. We show that such notions are not only sufficient for learning using linear predictors or a kernel, but unlike the exact variants, are also necessary. Thus they are better suited for discussing limitations of linear or kernel methods.
+</div>
+</li>
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Optimality of Correlated Sampling Strategies</b></a> [<a href="https://arxiv.org/pdf/1612.01041.pdf">pdf</a>] [<a href="https://theoryofcomputing.org/articles/v016a012/">ToC version</a>]<br/>
+<a href="http://bavarian.mit.edu/">Mohammad Bavarian</a>, <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Elad Haramaty, Pritish Kamath, <a href="https://people.csail.mit.edu/rivest/">Ronald L. Rivest</a>, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
+Theory of Computing <b>(TOC)</b>, 2020
+<div class="abs">
+<b>Abstract.</b>
+In the <i>correlated sampling</i> problem, two players are given probability distributions $P$ and $Q$, respectively, over the same finite set, with access to shared randomness. Without any communication, the two players are each required to output an element sampled according to their respective distributions, while trying to minimize the probability that their outputs disagree. A well known strategy due to Kleinberg-Tardos and Holenstein, with a close variant (for a similar problem) due to Broder, solves this task with disagreement probability at most $2\delta/(1+\delta)$, where $\delta$ is the total variation distance between $P$ and $Q$. This strategy has been used in several different contexts, including sketching algorithms, approximation algorithms based on rounding linear programming relaxations, the study of parallel repetition and cryptography.<br/><br/>
+
+In this paper, we give a surprisingly simple proof that this strategy is essentially optimal. Specifically, for every $\delta \in (0,1)$, we show that any correlated sampling strategy incurs a disagreement probability of essentially $2\delta/(1+\delta)$ on some inputs $P$ and $Q$ with total variation distance at most $\delta$. This partially answers a recent question of Rivest.<br/><br/>
+
+Our proof is based on studying a new problem that we call <i>constrained agreement</i>. Here, the two players are given subsets $A \subseteq [n]$ and $B \subseteq [n]$, respectively, and their goal is to output an element $i \in A$ and $j \in B$, respectively, while minimizing the probability that $i \ne j$. We prove tight bounds for this question, which in turn imply tight bounds for correlated sampling. Though we settle basic questions about the two problems, our formulation leads to more fine-grained questions that remain open.
 </div>
 </li>
 
@@ -179,19 +194,6 @@ We show that a natural uniform algorithm can compress the communication down to 
 ~~~
 {}{raw}
 <ul>
-<li>
-<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>The Optimality of Correlated Sampling</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/194/download/">pdf</a>]<br/>
-<a href="http://bavarian.mit.edu/">Mohammad Bavarian</a>, <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Elad Haramaty, Pritish Kamath, <a href="https://people.csail.mit.edu/rivest/">Ronald L. Rivest</a>, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>
-Theory of Computing <b>(TOC)</b>, <i>(to appear)</i>
-<div class="abs">
-<b>Abstract.</b> In the <i>correlated sampling</i> problem, two players, say Alice and Bob, are given two distributions, say $P$ and $Q$ respectively, over the same universe and access to shared randomness. The two players are required to output two elements, without any interaction, sampled according to their respective distributions, while trying to minimize the probability that their outputs disagree. A well-known protocol due to Holenstein, with close variants (for similar problems) due to Broder, and to Kleinberg and Tardos, solves this task with disagreement probability at most $2 \delta/(1+\delta)$, where $\delta$ is the total variation distance between $P$ and $Q$. This protocol has been used in several different contexts including sketching algorithms, approximation algorithms based on rounding linear programming relaxations, the study of parallel repetition and cryptography.<br/><br/>
-
-In this note, we give a surprisingly simple proof that this protocol is in fact tight. Specifically, for every $\delta \in (0,1)$, we show that any correlated sampling scheme should have disagreement probability at least $2\delta/(1+\delta)$. This partially answers a recent question of Rivest.<br/><br/>
-
-Our proof is based on studying a new problem we call <i>constrained agreement</i>. Here, Alice is given a subset $A \subseteq [n]$ and is required to output an element $i \in A$, Bob is given a subset $B \subseteq [n]$ and is required to output an element $j \in B$, and the goal is to minimize the probability that $i \neq j$. We prove tight bounds on this question, which turn out to imply tight bounds for correlated sampling. Though we settle basic questions about the two problems, our formulation also leads to several questions that remain open.
-</div>
-</li>
-
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Decidability of Non-Interactive Simulation of Joint Distributions</b></a> [<a href="http://eccc.weizmann.ac.il/report/2016/104/download">pdf</a>]<br/>
 <a href="http://people.csail.mit.edu/badih/">Badih Ghazi</a>, Pritish Kamath, <a href="http://madhu.seas.harvard.edu/">Madhu Sudan</a><br/>

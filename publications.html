@@ -95,6 +95,17 @@ Our work highlights the role of the well-known lower bounds of functions such as
 <h2>Publications and Pre-prints</h2>
 <ul>
 
+
+
+<li>
+<a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>On the Power of Differentiable Learning versus PAC and SQ Learning</b></a> [<a href="https://arxiv.org/pdf/2108.04190.pdf">pdf</a>]<br/>
+<a href="https://www.eranmalach.com/">Eran Malach</a>, Pritish Kamath, <a href="https://mds.epfl.ch/">Emmanuel Abbe</a>, <a href="">Colin Sandon</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
+<b>Manuscript</b>, 2021<br/>
+<div class="abs">
+<b>Abstract.</b> We study the power of learning via mini-batch stochastic gradient descent (SGD) on the population loss, and batch Gradient Descent (GD) on the empirical loss, of a differentiable model or neural network, and ask what learning problems can be learnt using these paradigms. We show that SGD and GD can always simulate learning with statistical queries (SQ), but their ability to go beyond that depends on the precision $\rho$ of the gradient calculations relative to the minibatch size $b$ (for SGD) and sample size $m$ (for GD). With fine enough precision relative to minibatch size, namely when $b\rho$ is small enough, SGD can go beyond SQ learning and simulate any sample-based learning algorithm and thus its learning power is equivalent to that of PAC learning; this extends prior work that achieved this result for $b=1$. Similarly, with fine enough precision relative to the sample size $m$, GD can also simulate any sample-based learning algorithm based on $m$ samples. In particular, with polynomially many bits of precision (i.e. when $\rho$ is exponentially small), SGD and GD can both simulate PAC learning regardless of the mini-batch size. On the other hand, when $b\rho^2$ is large enough, the power of SGD is equivalent to that of SQ learning.
+</div>
+</li>
+
 <li>
 <a href="javascript:void(0)" onclick="showAbstract(this)" class="title"><b>Eluder Dimension and Generalized Rank</b></a> [<a href="https://arxiv.org/pdf/2104.06970.pdf">pdf</a>]<br/>
 <a href="https://gxli97.github.io/">Gene Li</a>, Pritish Kamath, <a href="https://dylanfoster.net/">Dylan J. Foster</a>, <a href="https://ttic.uchicago.edu/~nati/">Nathan Srebro</a><br/>
@@ -349,7 +360,7 @@ Identification of protein families is a computational biology challenge that nee
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-06-16 21:33:08 MDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2021-09-17 18:01:37 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

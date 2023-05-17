@@ -1,2 +1,2 @@
-# pritishkamath.github.io
-Pritish Kamath's Homepage
+# vishalbhmath.github.io
+Vishal Bhardwaj's Homepage

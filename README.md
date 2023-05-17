@@ -1,2 +1,2 @@
-# vishalbhmath.github.io
+# vishalmath.github.io
 Vishal Bhardwaj's Homepage
